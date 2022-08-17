@@ -1,0 +1,3117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0037)http://www.kobay.co.kr/kobay/index.do -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>- 코베이옥션 -</title>
+	
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="(주)코베이">
+	<meta property="og:image" content="/kobay/images/common/kobay.jpg">
+	<meta property="og:url" content="http://kobay.co.kr/">
+	<meta property="og:site_name" content="코베이">
+	<meta property="og:description" content="코베이옥션은 1999년 설립된, 국내최대의 취미예술품 온라인 전문 경매사이트로 출발하여 지금까지 오랜 세월의 무게가 담긴 전적 및 고서적, 시인의 숨결이 담긴 시집, 손때 묻은 교과서, 추억의 사진, 만화책, 골동품 등 월평균 45만 건 이상의 거래가 이뤄지고 있는 대중 경매 사이트입니다.">
+	<meta name="twitter:title" content="(주)코베이">
+	<meta name="twitter:image" content="/kobay/images/common/kobay.jpg">
+	<meta name="twitter:url" content="http://kobay.co.kr/">
+	<meta name="twitter:card" content="summary">
+
+	<!-- fonts&icons -->
+	<link rel="stylesheet" href="./- 코베이옥션 -_files/fonts-nanum.css">
+	<link rel="stylesheet" async="" href="./- 코베이옥션 -_files/font-awesome.min.css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="./- 코베이옥션 -_files/bootstrap.css">
+	<link rel="stylesheet" href="./- 코베이옥션 -_files/basic.css">
+	<link rel="stylesheet" href="./- 코베이옥션 -_files/default.css">
+	<link rel="stylesheet" href="./- 코베이옥션 -_files/main.css">
+	<link rel="stylesheet" href="./- 코베이옥션 -_files/jquery-ui.css">
+	<link rel="stylesheet" href="./- 코베이옥션 -_files/new.css"><!-- 추가 스타일 -->
+	
+	<!-- js -->
+	<script type="text/javascript" async="" src="./- 코베이옥션 -_files/f.txt"></script><script type="text/javascript" async="" src="./- 코베이옥션 -_files/analytics.js"></script><script async="" src="./- 코베이옥션 -_files/gtm.js"></script><script async="" src="./- 코베이옥션 -_files/analytics.js"></script><script async="" src="./- 코베이옥션 -_files/gtm(1).js"></script><script type="text/javascript" anync="" src="./- 코베이옥션 -_files/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="./- 코베이옥션 -_files/bxslider.min.js"></script>
+
+ 	<script type="text/javascript" charset="UTF-8" src="./- 코베이옥션 -_files/kp.js"></script>
+
+<script type="application/ld+json">
+{
+ "@context": "http://schema.org",
+ "@type": "Person",
+ "name": "코베이옥션",
+ "url": "http://www.kobay.co.kr",
+ "sameAs": [
+   "https://www.instagram.com/e_kobay/",
+   "https://blog.naver.com/e_kobay",
+   "https://www.youtube.com/channel/UCg6uMcIxEO-S5IOqSJ4txQw"
+ ]
+}
+</script>
+<script type="text/javascript"></script><meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./- 코베이옥션 -_files/f(1).txt"></script><meta http-equiv="origin-trial" content="Azy2GzGQxPvGmQwVDdEL1jRuKSXIdSSASA06JCA6PCeaVHpFYf8Rw5/q+9adc9CrBTxfCeUwxkuDM4PWEmdqywwAAACKeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZWFkc2VydmljZXMuY29tOjQ0MyIsImZlYXR1cmUiOiJQcml2YWN5U2FuZGJveEFkc0FQSXMiLCJleHBpcnkiOjE2NjEyOTkxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./- 코베이옥션 -_files/f(2).txt"></script><script type="text/javascript" async="" src="./- 코베이옥션 -_files/1s9mPOHO.js"></script></head>
+<body>
+<span itemscope="" itemtype="http://schema.org/Organization">
+ <link itemprop="url" href="http://www.kobay.co.kr/">
+ <a itemprop="sameAs" href="https://www.instagram.com/e_kobay/"></a>
+</span>
+		
+
+
+
+<!-- 	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]> 
+		<script type='text/javascript' src="/kobay/js/html5.js"></script> 
+		<script type='text/javascript' src="/kobay/js/respond.js"></script>
+	<![endif]-->
+<script type="text/javascript">
+var urlLoc = document.location.href;
+var head= document.getElementsByTagName('head')[0];
+var script= document.createElement('script');
+/* if(urlLoc.indexOf("https://")<0){
+	//document.location.href = urlLoc.replace("http://", "https://");
+	script.type= 'text/javascript';
+	script.src= 'http://wcs.naver.net/wcslog.js';
+	head.appendChild(script);
+}else{
+	script.type= 'text/javascript';
+	script.src= 'https://wcs.naver.net/wcslog.js';
+	head.appendChild(script);
+} */
+script.type= 'text/javascript';
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "s_1f0cc0b3adab";
+if (!_nasa) var _nasa={};
+if (window.wcs) {
+    wcs.inflow("kobay.co.kr");
+    wcs_do(_nasa);
+}
+head.appendChild(script);
+</script>	
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5NC2RJ6');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NC2RJ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+	
+
+
+
+	<!-- GB-header -->
+	<header id="GB-header">
+		<!-- 
+ * 일자        작성자          변경내역
+ * 2022.03.21  dahoe0304       배송 중 문구 수정
+ * 2022.06.20  dahoe0304       구글 태그 값 수정
+-->
+
+
+
+
+
+
+<style type="text/css">
+a.underline:hover {
+	text-decoration: underline !important;
+}
+a.underline {
+	text-decoration: underline;
+}
+</style>
+<script>
+
+function setTimer(){
+	
+	var newDate = new Date();
+	var y = newDate.getFullYear();
+	var m = newDate.getMonth()+1;
+	var d = newDate.getDate();
+	
+	var h = newDate.getHours();
+	var mi = newDate.getMinutes();
+	var s = newDate.getSeconds();
+	
+	h = h<10 ? "0"+h : h;
+	mi = mi<10 ? "0"+mi : mi;
+	s = s<10 ? "0"+s : s;
+	
+	$('#timer').html(y + '. ' + m + '. ' + d + '. ' + h + ':' + mi + ':' + s);
+	$('#timer_m').html(y + '. ' + m + '. ' + d + '. ' + h + ':' + mi + ':' + s);
+	
+}
+
+function openMemoPop(){
+	var pop = window.open("/kobay/mypage/memo/memoList.do","pop","width=1024,height=768, scrollbars=yes, resizable=yes");
+}
+
+function showModalFavrCategory(gubun){
+	var param_data = {
+			cmd:'view'
+	};
+	$.ajax({
+		type: "POST",
+		url: "/kobay/favrcategory/favrcategoryAjax.do",
+		data : JSON.stringify(param_data),
+		contentType : "application/json;charset=utf-8",
+		dataType : "json",
+		async : true,
+		processData : false,
+		success:function(response){
+			if(response.resultMap.resultCd=="000"){
+				
+				var auciList = response.auciList;
+				var shpmList = response.shpmList;
+				
+				var strAuci = '';
+				for(var i=0; i<auciList.length; i++){
+					var item = auciList[i];
+					
+					if('0'==item.DEPTH){
+						if(i==0){
+							strAuci += '<dl class="wishCategoryArea frmFavr_auci">';
+							strAuci += '<dt>' + item.CATEGORYNAME + '</dt>';
+							strAuci += '<dd class="row">';
+						}else{
+							strAuci += '</dd>';
+							strAuci += '</dl>';
+							strAuci += '<dl class="wishCategoryArea mt40 frmFavr_auci">';
+							strAuci += '<dt>' + item.CATEGORYNAME + '</dt>';
+							strAuci += '<dd class="row">';
+						}
+					}else{
+						strAuci += '<div class="checkbox col-sm-6"><label>';
+						strAuci += '<input type="checkbox" name="chkFavrAuci" class="chkFavrAuci" value="'+item.CATEGORYID+'" ';
+						strAuci += (item.FAVRYN=='Y'?'checked':'') +' >'+item.CATEGORYNAME+'</label></div>';
+					}
+				}
+				if(strAuci.length>0){
+					strAuci += '</dd>';
+					strAuci += '</dl>';
+				}
+				
+				
+				var strShpm = '';
+				for(var i=0; i<shpmList.length; i++){
+					var item = shpmList[i];
+					
+					if('0'==item.DEPTH){
+						if(i==0){
+							strShpm += '<dl class="wishCategoryArea frmFavr_shpm">';
+							strShpm += '<dt>' + item.CATEGORYNAME + '</dt>';
+							strShpm += '<dd class="row">';
+						}else{
+							strShpm += '</dd>';
+							strShpm += '</dl>';
+							strShpm += '<dl class="wishCategoryArea mt40 frmFavr_shpm">';
+							strShpm += '<dt>' + item.CATEGORYNAME + '</dt>';
+							strShpm += '<dd class="row">';
+						}
+					}else{
+						strShpm += '<div class="checkbox col-sm-6"><label>';
+						strShpm += '<input type="checkbox" name="chkFavrShpm" class="chkFavrShpm" value="'+item.CATEGORYID+'" ';
+						strShpm += (item.FAVRYN=='Y'?'checked':'') +' >'+item.CATEGORYNAME+'</label></div>';
+					}
+				}
+				
+				if(strShpm.length>0){
+					strShpm += '</dd>';
+					strShpm += '</dl>';
+				}
+				
+				$('#divFavrCate').html(strAuci + strShpm);
+				
+				$('.chkFavrAuci').on("change", function(){
+					if($('INPUT:checkbox[name="chkFavrAuci"]:checked').length>5){
+						alert("최대 5개까지 선택이 가능합니다.");
+						$(this).prop('checked', false);
+					}
+				});
+
+				$('.chkFavrShpm').on("change", function(){
+					if($('INPUT:checkbox[name="chkFavrShpm"]:checked').length>5){
+						alert("최대 5개까지 선택이 가능합니다.");
+						$(this).prop('checked', false);
+					}
+				});
+				
+				if(gubun=="auci"){
+					$("#txtFavrTitle").html('관심카테고리 등록/수정 - 온라인 경매 (최대 5개까지)');
+					
+					$(".frmFavr_auci").show();
+					$(".frmFavr_shpm").hide();
+				}else {
+					$("#txtFavrTitle").html('관심카테고리 등록/수정 - 전문쇼핑몰 (최대 5개까지)');
+					
+					$(".frmFavr_auci").hide();
+					$(".frmFavr_shpm").show();
+				}
+				$('#modalFavrCategory').modal('show');
+				
+			}else {
+				alert(response.resultMap.resultMsg);
+				console.log(response.resultMap.resultCd + ":" + response.resultMap.resultMsg);
+			}
+		},
+		error:function(result){
+			console.log(result.status + " : " + result.description);
+			alert("오류가 발생하였습니다. 다시 시도해주세요");
+		}
+		
+	});
+}
+
+function uptFavrCategory(){
+	
+	var favrAuci = "";
+	$('INPUT:checkbox[name=chkFavrAuci]:checked').each(function(index, item){
+		if(favrAuci == ""){
+			favrAuci += $(item).val();
+		}else{
+			favrAuci += "_" + $(item).val();
+		}
+	});
+	
+	var favrShpm = "";
+	$('INPUT:checkbox[name=chkFavrShpm]:checked').each(function(index, item){
+		if(favrShpm == ""){
+			favrShpm += $(item).val();
+		}else{
+			favrShpm += "_" + $(item).val();
+		}
+	});
+	
+	
+	var param_data = {
+			cmd:'update'
+		,	favrAuci : favrAuci
+		,	favrShpm : favrShpm
+	};
+	
+	$.ajax({
+		type: "POST",
+		url: "/kobay/favrcategory/favrcategoryAjax.do",
+		data : JSON.stringify(param_data),
+		contentType : "application/json;charset=utf-8",
+		dataType : "json",
+		async : true,
+		processData : false,
+		success:function(response){
+			if(response.resultMap.resultCd=="000"){
+				alert(response.resultMap.resultMsg);
+				$('#modalFavrCategory').modal('hide');
+				location.reload();
+			}else {
+				alert(response.resultMap.resultMsg);
+				console.log(response.resultMap.resultCd + ":" + response.resultMap.resultMsg);
+			}
+		},
+		error:function(result){
+			console.log(result.status + " : " + result.description);
+			alert("오류가 발생하였습니다. 다시 시도해주세요");
+		}
+		
+	});
+	
+}
+
+function memberInfoSync() {
+	var param_data = {cmd:"search"};
+	$.ajax({
+		type: "POST",
+		url: "/kobay/member/userInfoSycnAjax.do",
+		data : JSON.stringify(param_data),
+		contentType : "application/json;charset=utf-8",
+		dataType : "json",
+		async : true,
+		processData : false,
+		success:function(response){
+			if(typeof response.infoMap != "undefined") {
+				$("#head_myAucCnt_text").html("입찰 중 "+makecm(response.infoMap.myAucCnt)+"건");
+				$("#head_depoReqCnt_text").html("입금요청 "+makecm(response.infoMap.depoReqCnt)+"건");
+				$("#head_deliveryCnt_text").html("배송중/구매결정대기 "+makecm(response.infoMap.deliveryCnt)+"건");
+				
+				$("#head_sellItemCnt_text").html("판매 중 "+makecm(response.infoMap.sellItemCnt)+"건");
+				$("#head_shipReqCnt_text").html("배송요청 "+makecm(response.infoMap.shipReqCnt)+"건");
+				$("#head_inqNoRepCntSellCnt_text").html("구매자문의  "+makecm(response.infoMap.inqNoRepCntSellCnt)+"건");
+
+				$("#head_aucEndCnt_text").html(makecm(response.infoMap.aucEndCntBid)+"건");
+				$("#head_currEmoney_text").html(makecm(response.infoMap.currEmoney)+"원");
+				$("#head_newMemoCnt_text").html(makecm(response.infoMap.newMemoCnt)+"건");
+				$("#head_myInqCnt_text").html(makecm(response.infoMap.myInqCnt)+"건");
+				
+				$("#headerMobMyAucCnt").html(makecm(response.infoMap.myAucCnt));
+				$("#headerMobDepoReqCnt").html(makecm(response.infoMap.depoReqCnt));
+				$("#headerMobDeliveryCnt").html(makecm(response.infoMap.deliveryCnt));
+				$("#headerMobAucEndCnt").html(makecm(response.infoMap.aucEndCntBid));;
+
+				$("#headerMobAucSellEndCnt").html(makecm(response.infoMap.aucEndSellCntBid));
+				$("#headerMobSellItemCnt").html(makecm(response.infoMap.sellItemCnt));
+				$("#headerMobShipReqCnt").html(makecm(response.infoMap.shipReqCnt));
+				$("#headerMobinqNoRepCntSellCnt").html(makecm(response.infoMap.inqNoRepCntSellCnt));
+
+				$("#headerMobMyFarvitemCnt").html(makecm(response.infoMap.myFarvitemCnt));
+				$("#headerMobEmoney").html(makecm(response.infoMap.currEmoney));
+				$("#headerMobnewMemoCnt").html(makecm(response.infoMap.newMemoCnt));
+				$("#headerMobMyInqCnt").html(makecm(response.infoMap.myInqCnt));
+			}
+
+		},
+		error:function(result){
+		}
+	});
+}
+
+$(document).ready(function() {
+	checkIE();
+	setTimer();
+	setInterval( function() {
+		setTimer();
+	},1000);
+
+	$('#btnUptFavr').bind('click', function(){
+		uptFavrCategory();
+	});
+	
+	
+	
+	$('#modalFavrCategory').on('shown.bs.modal', function (e) {
+	  // do something...
+		$(".modal-backdrop").css("z-index", "299");
+	});
+	$('#modalFavrCategory').on('hide.bs.modal', function (e) {
+	  // do something...
+		$(".modal-backdrop").css("z-index", "");
+	});
+	
+});
+
+function doLogout(){
+	
+	if(typeof(window.android) != "undefined" ){
+		window.android.setAutoLoginYn("N");
+	}
+	
+	location.href = '/kobay/member/doLogout.do';
+}
+
+function checkIE(){
+	var agt = navigator.userAgent.toLowerCase();
+    // IE old version ( IE 10 or Lower )
+    if (navigator.userAgent.indexOf('MSIE 9.0') > -1 || navigator.userAgent.indexOf('MSIE 8.0') > -1 | navigator.userAgent.indexOf('MSIE 7.0') > -1) 
+    	{
+			$("#browserCheck").slideDown();
+ 	        if ($.cookie('browserCheckDay') != undefined) {
+	            $("#browserCheck").slideUp();
+	        }
+     	}
+    
+    else
+    	{
+    		$("#browserCheck").slideUp();
+    	}
+
+}
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100136071-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!-- 브라우저 체크 안내 팝업 시작-->
+<style type="text/css">
+	#browserCheck{
+		background:url(/kobay/images/main/browserCheck-bg.gif);
+		padding:0;
+		text-align:center;
+		padding-top:30px;
+		position:relative;
+	}
+	#browserCheck p.infotxt1 {color:#fff; font-size:16px; margin-bottom:5px;}
+	#browserCheck p.infotxt2 {color:#acc7ff; font-size:15px;}
+	#browserCheck p.infotxt1 span{display:inline;border-bottom:1px solid #fff;}
+	#browserCheck .browserDown {display:block; overflow:hidden; padding-left:25px; width:750px;margin:0 auto; margin-top:30px; }
+	#browserCheck .browserDown p{float:left;margin:0px -25px;}
+	#browserCheck .closeCheck{position:absolute; right:10px; bottom:10px; width:180px;}
+	#browserCheck .closeBtn{position:absolute; right:0; top:0px;}
+
+</style>
+<script type="text/javascript" src="./- 코베이옥션 -_files/jquery.cookie.js"></script>
+<script>
+    //쿠키
+    $(function () {
+		$(".bCheckClose").click(function(){
+			$("#browserCheck").slideUp();
+		});
+
+    });
+ 
+    function setCookie() {
+        $.cookie('browserCheckDay', '1', { expires: 1, path : '/' }); //1일
+    }
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K7R98D8');</script>
+<!-- End Google Tag Manager -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NC2RJ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
+<div id="browserCheck" style="display: none;">
+	<p class="infotxt1">코베이 홈페이지는 <span class="underline">익스플로러(Internet Explorer)10이상 버전과 크롬</span>에 최적화되어 있습니다.</p>
+	<p class="infotxt2">홈페이지가 제대로 보이지 않거나 정상적으로 작동하지 않으시는 분들은 최신 익스플로러로 업데이트 하시거나 크롬을 다운받으시길  권장합니다.</p>
+	<div class="browserDown">
+		<p><a href="https://support.microsoft.com/ko-kr/help/17621/internet-explorer-downloads" target="_blank"><img src="./- 코베이옥션 -_files/browserCheck-btn1.png" alt="인터넷 익스플로러 업데이트 바로가기"></a></p>
+		<p><a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank"><img src="./- 코베이옥션 -_files/browserCheck-btn2.png" alt="크롬 다운로드 바로가기"></a></p>
+	</div>
+	<p class="closeCheck"><input type="checkbox" onclick="setCookie();" id="bCheckDay"> <label for="bCheckDay" class="fcWhite">오늘 하루 열지 않음</label></p>
+	<p class="closeBtn"><a href="javascript:void(0);" class="bCheckClose"><img src="./- 코베이옥션 -_files/bCheckClose.gif" alt="닫기"></a></p>
+</div>
+<!-- 브라우저 체크 안내팝업 끝 -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5NC2RJ6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<div class="container-fluid top-common visible-lg visible-md visible-sm">
+			<div class="text-center">
+				<div class="dpTable wp100">
+					<div class="comList">
+						<ul class="list-unstyled">
+							<li id="timer" class="timer">2022. 7. 21. 18:33:57</li>
+							
+							
+							
+							
+							<li class="clearFix">
+								<p><i class="fa fa-lock"></i> 로그인을 하시면 다양한 정보를 보실 수 있습니다.</p>
+							</li>
+							
+							
+							
+							
+						</ul>	
+					</div>
+					<div class="dpTableC comList">
+						<ul class="list-unstyled">
+							
+							
+							
+							<li class="clearFix">
+								<p><a href="http://www.kobay.co.kr/kobay/guide.do">코베이가 처음이신가요?</a></p>
+								<p><a href="https://www.kobay.co.kr/kobay/member/login.do">로그인</a></p>
+								<p><a href="http://www.kobay.co.kr/kobay/member/joinStep01.do">회원가입</a></p>
+								<p><a href="http://www.kobay.co.kr/kobay/mypage/mypageMain.do?returnUrl=/kobay/mypage/mypageMain.do">마이페이지</a></p>
+							</li>
+							
+							
+							
+							
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+<div id="modalFavrCategory" class="modal fade" role="dialog">
+	<div class="modal-dialog pop-find">
+
+		<!-- Modal content-->
+		<div class="modal-content">	
+			<!-- GB-wrap -->
+			<div id="GB-wrap">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"></button>
+						<h4 class="modal-title"><strong id="txtFavrTitle">관심카테고리 등록/수정</strong></h4>
+					</div>
+					
+					<form id="frmFavr" name="frmFavr" method="post" onsubmit="return false;">
+						<div class="modal-body" id="divFavrCate">
+								
+								<dl class="wishCategoryArea" id="frmFavr_auci">
+									<dt>온라인 경매 (최대 5개까지)</dt>
+									<dd class="row" id="ddFavrAuci">
+									</dd>
+								</dl>
+								
+								<dl class="wishCategoryArea mt40" id="frmFavr_shpm">
+									<dt>전문쇼핑몰 (최대 5개까지)</dt>
+									<dd class="row" id="ddFavrShpm">
+									</dd>
+								</dl>		
+				
+						</div>
+			
+						<div class="modal-footer text-center">
+							<input id="btnUptFavr" type="submit" value="등록/수정" class="btn btn-blue btn-md">
+						</div>
+					</form>
+			
+			</div>
+		</div>
+	</div>
+</div>
+
+
+		<!-- 
+ * 일자        작성자          변경내역
+ * 2022.03.02  yukipeter       검색 중복 요청 차단 (allUtemList.jsp 및 itemList.jsp에는 onchange이벤트 및 변수값을 정의하지 않았으므로 사용함에 유의)
+ * 2022.03.10  yukipeter       삶의흔적 분기 NORMAL(평상시) / OFFLINE(오프라인경매) / ONLINE(온라인경매)
+ * 2022.03.11  yukipeter       검색 속도 개선 (전체/판매자ID유사/경매번호유사/경매번호동일 비표시)
+ * 2022.03.15  yukipeter       2단어 OR 검색 추가 및 2단어 이상 입력 체크
+ * 2022.07.01  dahoe0304       삶의흔적 온라인 준비 및 로직 수정
+ * 2022.07.05  dahoe0304       삶의흔적 온라인 categoryid 값 수정
+-->
+
+
+
+
+
+
+
+<!-- 2022.03.10 삶의흔적 분기 NORMAL(평상시) / OFFLINE(오프라인경매) / ONLINE(온라인경매) -->
+
+
+
+<!-- env.properties의 remoteSupport 가져오는 부분 2022.02.10 신다회 -->
+
+
+<style>
+sup {
+	font-size: 50%;
+}
+#datafield {
+	border: 1px solid #ddd;
+	height: 35px;
+	width: 90px;
+	text-indent: 10px;
+	padding: 0;
+	display: inline;
+}
+@media(min-width:831px){
+	.special-xs {
+		display: none;
+	}
+}
+@media(max-width:830px){
+	#datafield {
+		height: 45px;
+		width: 27%;
+		font-size: 16px;
+		vertical-align:middle;/*2020.11.20일 수정 */
+	}
+	.navbar-default .headSearch input[type=text]{
+		width:50%;
+		height:45px;
+		font-size:16px;
+		vertical-align:middle;	 margin-right:1%; /*2020.11.20일 수정 */
+	}
+	.navbar-default .headSearch input[type=submit]{
+		width:20%;
+		height:45px;
+		font-size:16px;
+		background:#114da5;
+		font-weight:bold;
+		vertical-align:middle;/*2020.11.20일 수정 */
+	}
+}
+</style>
+
+
+
+
+<!-- 2022.03.02 검색 중복 요청 차단 START -->
+<script type="text/javascript">
+
+// 초기값 : 검색가능
+var srchEnabled = true;
+
+function doSrch(){
+	// 2022.03.15 2단어 OR 검색 추가 START
+	var sQry = document.frmUnisrch.qry.value;
+	sQry = sQry.replace(/(^ *)|( *$)/g, "").replace(/ +/g, " ");	// 연속된 공백을 하나의 공백으로 치환한 후 TRIM 적용 
+	document.frmUnisrch.qry.value = sQry;
+	
+	var results = sQry.match(/ /g);
+	if(results != null){
+		if(results.length > 1){
+			alert('검색어를 2단어 이내로 입력해주세요.');
+			return;
+		}
+	}
+	// 2022.03.15 2단어 OR 검색 추가 END	
+	
+	if(!srchEnabled){
+		alert('검색 중입니다. 검색이 완료될 때까지 잠시만 기다려주세요.');
+		return;
+	}
+
+	// 검색 중이므로 검색불가능으로 설정
+	srchEnabled = false;
+	
+	var f = document.frmUnisrch
+	
+	f.action = "/kobay/unisrch/unisrch.do";
+	f.submit();
+}
+
+// 검색조건을 변경하는 경우 검색가능으로 변경
+// allUtemList.jsp 및 itemList.jsp에는 정의하지 않았으므로 공통으로 사용함에 유의
+function changeKeyword(){
+	srchEnabled = true;
+}
+
+// 2022.03.15 2단어 이상 입력 체크
+function keydownKeyword(obj)
+{
+	var sQry = obj.value;
+	sQry = sQry.replace(/ +/g, " ");	// 연속된 공백을 하나의 공백으로 치환
+	sQry = sQry.replace(/^ /gi, "");;	// 앞의 공백만 제거
+
+	var results = sQry.match(/ /g);
+	if(results != null){
+		if(results.length > 1){
+			alert('검색어를 2단어 이내로 입력해주세요.');
+			obj.value = sQry.replace(/(^ *)|( *$)/g, "").replace(/ +/g, " ");	// 연속된 공백을 하나의 공백으로 치환한 후 TRIM 적용
+			event.returnValue = false;
+			return false;
+		}
+	}
+}
+
+</script>
+<!-- 2022.03.02 검색 중복 요청 차단 END -->
+
+
+
+
+
+
+		<div class="container-fluid gnbWrap affix">
+			<!-- navi -->
+
+			<nav id="gnb" class="navbar navbar-default" role="navigation">
+				<div class="container">
+				<!-- top -->
+				<div class="navbar-header">
+					<p class="vertical-middle visible-xs">
+						<a href="javascript:void(0);" class="h1 fcBlue3 navbar-toggle" data-toggle="collapse" data-target="#myNavbar"><i class="fa fa-navicon"></i></a>
+						
+					</p>
+					<!-- logo -->
+					<h1><a class="navbar-brand _aw_search_homeurl_href" href="http://www.kobay.co.kr/kobay/"><img src="./- 코베이옥션 -_files/logo.gif" alt="Kobay" class="fullimg" style="display:inline-block;"></a></h1>
+					<!-- //logo -->
+					<p class="vertical-middle text-right visible-xs">
+						<a href="javascript:void(0);" class="h1 mobileSearchBtn"><i class="fa fa-close" style="display:none;"></i><i class="fa fa-search"></i></a>
+						
+				
+					
+						<a href="https://www.kobay.co.kr/kobay/member/login.do" id="btnLogin" class="h1 ml15 moblieMemberInfoMenu"><i class="fa fa-user"></i></a>
+					
+					
+				
+					</p>
+					<script type="text/javascript">
+						$(document).ready(function(){
+							$(".mobileSearchBtn .fa-search").click(function(){
+								$(".headSearch").fadeIn();
+								$(this).hide();
+								$(".mobileSearchBtn .fa-close").show();
+							});
+							$(".mobileSearchBtn .fa-close, .navbar-toggle, .moblieMemberInfoMenu").click(function(){
+								$(".headSearch").fadeOut();
+								$(".mobileSearchBtn .fa-close").hide();
+								$(".mobileSearchBtn .fa-search").show();
+							});
+						});
+					</script>
+				</div>
+				<!-- //top -->
+
+
+				<!-- gnb -->
+				<div id="myNavbar" class="collapse navbar-collapse" style="margin-left: 0%">
+					<h2 class="sr-only">메뉴</h2>
+					<ul class="nav navbar-nav dropdownMenu tabLink_on">
+							<!-- 태블릿 이하버전에서 노출 -->
+							<li class="visible-xs timer bgWhite">
+								<div class="dpTable wp100">
+									<p class="dpTableC w40"><img src="./- 코베이옥션 -_files/nav-icon-clock.gif" alt="" class="wp100"></p>
+									<p class="dpTableC fs18 pl10"><strong id="timer_m">2022. 7. 21. 18:33:57</strong></p>
+									<p class="dpTableC w25"><a href="javascript:void(0);" data-toggle="collapse" data-target="#myNavbar"><img src="./- 코베이옥션 -_files/nav-cion-close.gif" alt="" class="wp100"></a></p>
+								</div>
+							</li>
+							<!-- 온라인경매 -->
+							<li class="dropdown ">
+								
+									
+									
+										<a class="dropdown-toggle visible-md visible-lg" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/index.do#" onclick="location.href=&#39;/kobay/item/itemList.do?itemType=LB&#39;">온라인경매<span class="toggleMenu sr-only">메뉴 열기</span></a>
+										<a class="dropdown-toggle visible-xs" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/item/itemList.do?itemType=LB">온라인경매<span class="toggleMenu sr-only">메뉴 열기</span></a>
+									
+								
+								<div class="dropdown-menu">
+									<ul class="container depth2 down-style2">
+										<li>
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?itemType=LB"><span class="subMenuName">전체보기 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?itemType=RS"><span class="subMenuName">추천경매 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?itemType=LB_HOT"><span class="subMenuName">인기경매<i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?itemType=LP"><span class="subMenuName">오늘마감<i class="fa fa-caret-right"></i></span></a></p>
+											
+											<!--  2021년 6월 8일 2시 이후로 06 카테고리 노출 
+											
+											
+											 
+											
+											
+											
+											
+												
+													
+														<p><a href="/kobay/item/itemList.do?categoryid=01"><span class="subMenuName">미술품<i class="fa fa-caret-right"></i></span></a></p>
+													
+														<p><a href="/kobay/item/itemList.do?categoryid=02"><span class="subMenuName">근현대생활사자료<i class="fa fa-caret-right"></i></span></a></p>
+													
+														<p><a href="/kobay/item/itemList.do?categoryid=03"><span class="subMenuName">도서<i class="fa fa-caret-right"></i></span></a></p>
+													
+														<p><a href="/kobay/item/itemList.do?categoryid=04"><span class="subMenuName">취미 / 수집<i class="fa fa-caret-right"></i></span></a></p>
+													
+														<p><a href="/kobay/item/itemList.do?categoryid=05"><span class="subMenuName">중고생활용품<i class="fa fa-caret-right"></i></span></a></p>
+													
+												
+												
+											
+											-->
+											
+												<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?categoryid=01"><span class="subMenuName">미술품<i class="fa fa-caret-right"></i></span></a></p>
+											
+												<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?categoryid=02"><span class="subMenuName">근현대생활사자료<i class="fa fa-caret-right"></i></span></a></p>
+											
+												<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?categoryid=03"><span class="subMenuName">도서<i class="fa fa-caret-right"></i></span></a></p>
+											
+												<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?categoryid=04"><span class="subMenuName">취미 / 수집<i class="fa fa-caret-right"></i></span></a></p>
+											
+												<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?categoryid=05"><span class="subMenuName">중고생활용품<i class="fa fa-caret-right"></i></span></a></p>
+											
+											
+											
+												<p><a href="http://www.kobay.co.kr/kobay/item/itemList.do?categoryid=0405"><span class="subMenuName">이달의 카테고리<i class="fa fa-caret-right"></i></span></a></p>
+											
+											<p><a href="http://www.kobay.co.kr/kobay/item/sellRank.do"><span class="subMenuName"><b><font color="red">New</font>&nbsp;판매자 랭킹</b><i class="fa fa-caret-right"></i></span></a></p>
+											
+										</li>
+									</ul>
+								</div>
+							</li>
+							
+							<!-- 전문쇼핑몰 -->
+							<li class="dropdown ">
+								<a class="dropdown-toggle visible-md visible-lg" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/index.do#" onclick="location.href=&#39;/kobay/item/itemShopList.do?itemType=LB&#39;">전문쇼핑몰<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<a class="dropdown-toggle visible-xs" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/item/itemShopList.do?itemType=LB">전문쇼핑몰<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<div class="dropdown-menu">
+									<ul class="container depth2 down-style2">
+										<li>
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemShopList.do?itemType=LSC"><span class="subMenuName">전체보기 <i class="fa fa-caret-right"></i></span></a></p>
+											
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemShopList.do?categoryid=01"><span class="subMenuName">미술품<i class="fa fa-caret-right"></i></span></a></p>
+											
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemShopList.do?categoryid=02"><span class="subMenuName">근현대생활사자료<i class="fa fa-caret-right"></i></span></a></p>
+											
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemShopList.do?categoryid=03"><span class="subMenuName">도서<i class="fa fa-caret-right"></i></span></a></p>
+											
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemShopList.do?categoryid=04"><span class="subMenuName">취미 / 수집<i class="fa fa-caret-right"></i></span></a></p>
+											
+											<p><a href="http://www.kobay.co.kr/kobay/item/itemShopList.do?categoryid=05"><span class="subMenuName">중고생활용품<i class="fa fa-caret-right"></i></span></a></p>
+											
+										</li><li>
+									</li></ul>
+								</div>
+							</li>
+
+
+							<!-- 2022.03.10 삶의흔적 분기 NORMAL(평상시) / OFFLINE(오프라인경매) / ONLINE(온라인경매) START -->
+							
+								
+								
+								
+									<!-- 삶의흔적 온라인 경매시 사용 -->
+									<li class="dropdown ">
+										
+										
+										<a class="dropdown-toggle visible-md visible-lg" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/index.do#" onclick="location.href=&#39;/kobay/item/planList.do?categoryid=010901&amp;itemType=OK&#39;;">삶의흔적경매<sup><font color="red"><b>New</b></font></sup><span class="toggleMenu sr-only">메뉴
+												열기</span></a> <a class="dropdown-toggle visible-xs" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/item/planList.do?categoryid=010901&amp;itemType=OK">삶의흔적경매<sup><font color="red"><b>New</b></font></sup><span class="toggleMenu sr-only">메뉴
+												열기</span></a>
+				
+										<div class="dropdown-menu">
+											<ul class="container depth2 down-style2">
+												<li>
+													<p>
+														<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;/kobay/item/planList.do?categoryid=010901&amp;itemType=OK&#39;;">
+															<img src="./- 코베이옥션 -_files/life_PC.gif" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" width="950" height="60" class="visible-md visible-lg" border="0" title="">
+															<img src="./- 코베이옥션 -_files/life_M.gif" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" width="98%" height="100%" class="visible-xs" border="0" title="">
+														</a>
+													</p>
+												</li>
+											</ul>
+										</div>
+									</li>
+								
+								
+								
+							
+							<!-- 2022.03.10 삶의흔적 분기 NORMAL(평상시) / OFFLINE(오프라인경매) / ONLINE(온라인경매) END -->
+
+
+							<!-- 기획경매 -->
+							<!-- <li class="dropdown ">
+								<a class="dropdown-toggle visible-md visible-lg" data-toggle="dropdown" href="#" onclick="location.href='/kobay/item/planList.do?categoryid=01&itemType=all&ord1=OC&sort1=desc'">기획경매<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<a class="dropdown-toggle visible-xs" data-toggle="dropdown" href="/kobay/item/planList.do?categoryid=01&itemType=all&ord1=OC&sort1=desc">기획경매<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<div class="dropdown-menu">
+									<ul class="container depth2 down-style2">
+										<li>
+											<p><a href="/kobay/item/planList.do?categoryid=01&itemType=all&ord1=OC&sort1=desc"><span class="subMenuName">특별기획전 <i class="fa fa-caret-right"></i></span></a></p>	
+	 									</li>
+									</ul>
+								</div>
+							</li> -->
+
+							<!-- 고객센터 -->
+							<li class=" dropdown ">
+								<a class="dropdown-toggle visible-md visible-lg" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/index.do#" onclick="location.href=&#39;/kobay/customer/customer.do&#39;">고객센터<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<a class="dropdown-toggle visible-xs" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/customer/customer.do">고객센터<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<div class="dropdown-menu">
+									<ul class="container depth2 down-style2">
+										<li>
+											<p><a href="http://www.kobay.co.kr/kobay/customer/customer.do"><span class="subMenuName">고객센터 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/customer/customer-faq-list.do"><span class="subMenuName">자주 묻는질문 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/customer/customer-inquiry-write.do"><span class="subMenuName">1:1상담문의 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/customer/customer-notice-list.do"><span class="subMenuName">공지사항 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/customer/customer-info-list.do"><span class="subMenuName">알림게시판 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/customer/planNoticeList.do"><span class="subMenuName">기획전 공고 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/customer/customer-consulting-write.do"><span class="subMenuName">컨설팅 및 판매대행 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="https://988.co.kr/" target="_blank"><span class="subMenuName">원격지원서비스 <i class="fa fa-caret-right"></i></span></a></p>
+											<p><a href="http://www.kobay.co.kr/kobay/companyJob.do"><span class="subMenuName">채용안내 <i class="fa fa-caret-right"></i></span></a></p>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<!-- 물품등록 -->
+							<li class="dropdown ">
+								<a class="dropdown-toggle" _data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/item/itemRegistrationMain.do">물품등록</a>
+							</li>
+							
+							<!-- 전체메뉴보기 -->
+							<li class="dropdown GNB-AllMenu ">
+								<a class="dropdown-toggle" _data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/siteMap.do">전체메뉴</a>
+							</li>
+
+						</ul>
+			
+				</div>
+				<!-- //gnb -->
+
+				<!-- 
+ * 일자        작성자          변경내역
+ * 2022.03.21  dahoe0304       배송 중 문구 수정
+-->
+
+
+
+
+
+<script type="text/javascript">
+
+function m_doLogout(){
+	
+	if(typeof(window.android) != "undefined" ){
+		window.android.setAutoLoginYn("N");
+	}
+	
+	location.href = '/kobay/member/doLogout.do';
+}
+
+function openAdmin(){
+	var url = 'https://www.kobay.co.kr/admin/';
+	if(typeof(window.android) != "undefined" ){
+		window.android.openBroswer(url);
+	}else{
+		window.open(url, '_blank');
+	}
+}
+
+</script>
+
+
+				<!-- mobile member -->
+
+				<div id="myNavbar2" class="collapse navbar-collapse mobileMemberMenu">
+					<h2 class="sr-only">메뉴</h2>
+					<ul class="nav navbar-nav dropdownMenu tabLink_on">
+						
+							<li class="visible-xs timer bgWhite">
+								<div class="dpTable wp100">
+									<p class="dpTableC w40"><img src="./- 코베이옥션 -_files/nav-icon-member.gif" alt="" class="wp100"></p>
+									<p class="dpTableC fs18 pl10">
+										<strong>님은 <!--  --></strong>
+										
+											
+											
+											
+												 입니다.
+											
+										
+
+											
+									</p>
+									<p class="dpTableC w25"><a href="javascript:void(0);" data-toggle="collapse" data-target="#myNavbar2"><img src="./- 코베이옥션 -_files/nav-cion-close.gif" alt="" class="wp100"></a></p>
+								</div>
+							</li>
+							<li class="myInfo">
+								<div class="dpTable wp100">
+									<p class="dpTableC wp50"><a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="m_doLogout();" style="background: #707070;">로그아웃 <i class="pull-right"><img src="./- 코베이옥션 -_files/icon-myinfo1.gif" alt="" class="wp100"></i></a></p>
+									<!-- <p class="dpTableC wp50"><a href="#" onclick="alert('준비중인 서비스입니다.')">혜택신청 <i class="pull-right"><img src="/kobay/images/common/icon-myinfo2.gif" alt="" class="wp100"/></i></a></p> -->
+								</div>
+								<div class="row">
+									<ul class="col-xs-6 list-unstyled text-center">
+										<li onclick="location.href=&#39;/kobay/mypage/buyProgDealStatusList.do?state=STA&#39;;"><a href="http://www.kobay.co.kr/kobay/mypage/buyProgDealStatusList.do?state=STA" style="float: none;"><strong>구매</strong> </a></li>
+									</ul>
+									<ul class="col-xs-6 list-unstyled text-center">
+										<li onclick="location.href=&#39;/kobay/mypage/itemAucEndSellList.do?stateType=STN&#39;;"><a href="http://www.kobay.co.kr/kobay/mypage/itemAucEndSellList.do?stateType=STN" style="float: none;"><strong>판매</strong> </a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="myInfo">
+								<div class="row">
+									<ul class="col-xs-6 list-unstyled">
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/buyProgStatusList.do?itemType=LB&amp;ord1=OD&amp;sort=desc" style="float: none;">입찰 중 </a><a href="http://www.kobay.co.kr/kobay/mypage/buyProgStatusList.do?itemType=LB&amp;ord1=OD&amp;sort=desc"><strong id="headerMobMyAucCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/buyProgStatusList.do?itemType=LG&amp;type=range-6m&amp;ord1=OJ&amp;sort=desc" style="float: none;">구매종료(낙찰)</a><a href="http://www.kobay.co.kr/kobay/mypage/buyProgStatusList.do?itemType=LG&amp;type=range-6m&amp;ord1=OJ&amp;sort=desc"><strong id="headerMobAucEndCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/buyProgDealStatusList.do?state=STA" style="float: none;">입금요청 </a><a href="http://www.kobay.co.kr/kobay/mypage/buyProgDealStatusList.do?state=STA"><strong id="headerMobDepoReqCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/buyProgDealStatusList.do?state=STCC" style="float: none;">배송중/구매결정대기 </a><a href="http://www.kobay.co.kr/kobay/mypage/buyProgDealStatusList.do?state=STCC"><strong id="headerMobDeliveryCnt"></strong>건</a></li>
+									</ul>
+									<ul class="col-xs-6 list-unstyled">
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/itemSellList.do?itemType=LB&amp;ord1=OD&amp;sort1=asc&amp;displayTime=TLS" style="float: none;">판매 중 </a><a href="http://www.kobay.co.kr/kobay/mypage/itemSellList.do?itemType=LB&amp;ord1=OD&amp;sort1=asc&amp;displayTime=TLS"><strong id="headerMobSellItemCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/itemSellList.do?itemType=LE&amp;ord1=OJ&amp;sort1=desc&amp;displayTime=TLS" style="float: none;">판매종료(낙찰)</a><a href="http://www.kobay.co.kr/kobay/mypage/itemSellList.do?itemType=LE&amp;ord1=OJ&amp;sort1=desc&amp;displayTime=TLS"><strong id="headerMobAucSellEndCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/itemAucEndSellList.do?stateType=STF" style="float: none;">배송요청 </a><a href="http://www.kobay.co.kr/kobay/mypage/itemAucEndSellList.do?stateType=STF"><strong id="headerMobShipReqCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/myactivity/itemSellBoardList.do?type=all&amp;answerflag=N" style="float: none;">구매자문의 </a><a href="http://www.kobay.co.kr/kobay/mypage/myactivity/itemSellBoardList.do?type=all&amp;answerflag=N"><strong id="headerMobinqNoRepCntSellCnt"></strong>건</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="myInfo">
+								<div class="row">
+									<ul class="col-xs-6 list-unstyled">
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/myinfo/emoneyDetail.do" style="float: none;">이머니 </a><a href="http://www.kobay.co.kr/kobay/mypage/myinfo/emoneyDetail.do"><strong id="headerMobEmoney"></strong>원</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/myactivity/itemFavrList.do" style="float: none;">관심물품 </a><a href="http://www.kobay.co.kr/kobay/mypage/myactivity/itemFavrList.do"><strong id="headerMobMyFarvitemCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/todayList.do" style="float: none;">오늘 본 상품 </a></li>
+									</ul>
+									<ul class="col-xs-6 list-unstyled">
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/memo/memoList.do" style="float: none;">쪽지 </a><a href="http://www.kobay.co.kr/kobay/mypage/memo/memoList.do" target="_blank"><strong id="headerMobnewMemoCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/myactivity/oneOnOneList.do" style="float: none;">1:1 문의 </a><a href="http://www.kobay.co.kr/kobay/mypage/myactivity/oneOnOneList.do"><strong id="headerMobMyInqCnt"></strong>건</a></li>
+										<li><a href="http://www.kobay.co.kr/kobay/mypage/myinfo/myinfoForm.do" style="float: none;">나의 정보수정 </a></li>
+									</ul>
+								</div>
+							</li>
+
+							<!-- 관심카테고리 -->
+							<li class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">관심카테고리<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<div class="dropdown-menu dpTable wp100">
+									<dl class="dpTableC wp50 vertical-top">
+										<dt>온라인경매</dt>
+										
+										
+												<dd>카테고리를 등록하세요</dd>
+												<dd class="setBtn"><a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="showModalFavrCategory(&#39;auci&#39;);" class="btn btn-blue btn-sm wp100">등록</a></dd>
+										
+										
+										
+									</dl>
+									<dl class="dpTableC wp50 vertical-top">
+										<dt>전문쇼핑몰</dt>
+										
+											
+													<dd>카테고리를 등록하세요</dd>
+													<dd class="setBtn"><a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="showModalFavrCategory(&#39;shpm&#39;);" class="btn btn-blue btn-sm wp100">등록</a></dd>
+											
+											
+										
+									</dl>
+								</div>
+							</li>
+							
+							<!-- 마이페이지 홈 -->
+							<li class="dropdown ">
+								<a class="dropdown-toggle" href="https://www.kobay.co.kr/kobay/mypage/mypageMain.do">마이페이지 홈</a>
+							</li>
+
+							<!-- 구매관리 -->
+							<li class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/index.do#none">구매관리<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<div class="dropdown-menu dpTable wp100">
+									<dl class="dpTableC wp50 vertical-top">
+										<dt>구매관리</dt>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/buyProgStatusList.do?itemType=LB&amp;ord1=OD&amp;sort=desc" class="fcBlack">구매진행중</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/buyProgStatusList.do?itemType=LG&amp;type=range-1m&amp;ord1=OJ&amp;sort=desc" class="fcBlack">구매종료</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/buyProgDealStatusList.do?state=STA" class="fcBlack">구매물품거래진행중</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/buyProgCancelList.do?stateType=STA&amp;searchRetype=SRTA&amp;type=range-6m" class="fcBlack">구매거부/반품/미입금/판매거부/미수령신고</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/buyProgOffList.do" class="fcBlack">삶의흔적</a></dd>
+									</dl>
+								</div>
+							</li>
+							
+							<!-- 판매관리 -->
+							<li class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/index.do#none">판매관리<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<div class="dropdown-menu dpTable wp100">
+									<dl class="dpTableC wp50 vertical-top">
+										<dt>판매관리</dt>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/itemSellList.do?itemType=LA&amp;ord1=OC&amp;sort1=asc&amp;displayTime=TLS" class="fcBlack">판매시작이전</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/itemSellList.do?itemType=LB&amp;ord1=OD&amp;sort1=asc&amp;displayTime=TLS" class="fcBlack">판매진행중</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/itemSellList.do?itemType=LE&amp;ord1=OJ&amp;sort1=desc&amp;displayTime=TLS" class="fcBlack">판매종료</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/itemAucEndSellList.do?stateType=STN" class="fcBlack">판매물품거래진행중</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/mypage/goodsCancelSellerActionList.do?stateType=STA&amp;searchRetype=SRTA" class="fcBlack">구매거부/반품/미입금/판매거부/미수령신고</a></dd>
+									</dl>
+								</div>
+							</li>
+							
+							<!-- 나의 삶의흔적 관리 -->
+							<li class="dropdown ">
+								<a class="dropdown-toggle" href="http://www.kobay.co.kr/kobay/mypage/trdItemList.do">나의 삶의흔적 관리<span class="toggleMenu sr-only">메뉴 열기</span></a>
+							</li>
+							
+							<!--나의정보관리-->
+							<li class="dropdown ">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="http://www.kobay.co.kr/kobay/index.do#none">나의정보관리<span class="toggleMenu sr-only">메뉴 열기</span></a>
+								<div class="dropdown-menu dpTable wp100">
+									<dl class="dpTableC wp50 vertical-top" style="border-bottom:2px solid #bababa;">
+										<dt>나의정보관리</dt>
+										<dd><a href="https://www.kobay.co.kr/kobay/mypage/myinfo/myinfoForm.do" class="fcBlack">회원정보수정</a></dd>
+										<dd><a href="https://www.kobay.co.kr/kobay/mypage/myinfo/memberOut.do" class="fcBlack">회원탈퇴</a></dd>
+										<dd><a href="https://www.kobay.co.kr/kobay/mypage/myinfo/bizApplyGuide.do" class="fcBlack">사업자회원 전환</a></dd>
+										<dd><a href="https://www.kobay.co.kr/kobay/mypage/myinfo/myCredit.do" class="fcBlack">나의 등급/신용도</a></dd>
+										<dd><a href="https://www.kobay.co.kr/kobay/mypage/myinfo/emoneyDetail.do" class="fcBlack">이머니 관리</a></dd>
+										<dd><a href="https://www.kobay.co.kr/kobay/mypage/myinfo/myAccount.do" class="fcBlack">나의 계좌관리</a></dd>
+										<dd><a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="openMemoPop();" class="fcBlack">나의 쪽지함</a></dd>
+									</dl>
+								</div>
+							</li>
+							
+						</ul>
+			
+				</div>
+				
+				<!-- //mobile member -->
+
+
+
+				<!-- search -->
+<!-- 2022.03.02 검색 중복 요청 차단 START
+					<div class="headSearch pull-right">
+						<form name="frmUnisrch" method="post" action="/kobay/unisrch/unisrch.do" >
+							<select id="datafield"  name="datafield" class="form-control" >
+								<option value="">전체</option>
+								<option value="SA">물품제목</option>
+								<option value="SB">판매자ID(유사)</option>
+								<option value="SC">판매자ID(동일)</option>
+								<option value="SD">경매번호(유사))</option>
+								<option value="SE">경매번호(동일)</option>
+							</select>
+							<input name="qry" type="text" placeholder="검색어를 입력하세요." /><input type="submit" value="검색" />
+						</form>
+					</div>
+     2022.03.02 검색 중복 요청 차단 END -->					
+					
+					<div class="headSearch pull-right">
+						<form name="frmUnisrch" method="post" onsubmit="return false;">
+							<select id="datafield" name="datafield" class="form-control" onchange="changeKeyword()">
+<!-- 2022.03.11 검색 속도 개선	<option value="">전체</option> -->
+								<option value="SA">물품명</option>
+<!-- 2022.03.11 검색 속도 개선	<option value="SB">판매자ID(유사)</option> -->
+								<option value="SC">판매자ID(동일)</option>
+<!-- 2022.03.11 검색 속도 개선	<option value="SD">경매번호(유사)</option> -->
+<!-- 2022.03.11 검색 속도 개선	<option value="SE">경매번호(동일)</option> -->
+							<!-- 2022.03.15 2단어 이상 입력 체크 (onkeydown이벤트 추가) -->
+							</select> <input name="qry" type="text" placeholder="검색어를 입력하세요." onchange="changeKeyword()" onkeydown="keydownKeyword(this)">
+							<input type="submit" onclick="doSrch();" value="검색">				
+						</form>
+					</div>					
+					
+				<!-- //search -->
+				</div>
+			</nav>
+			<!-- //navi -->
+			
+		</div>
+		<div class="spaceBox affix"></div>
+		<script>
+				$(document).ready(function(){
+				$('.gnbWrap').affix({offset: {top: 50} }); 
+				$('.spaceBox').affix({offset: {top: 50} }); 
+				
+				// very simple to use!
+				
+				var navWhite = $("#gnb").width();
+				if ( navWhite > 1200 ){
+					$('ul.nav li.dropdown').hover(function() {
+						  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(500);
+						}, function() {
+						  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(500);
+						});
+					}
+				});
+				$(window).resize(function(){
+					var navWhite = $("#gnb").width();
+					if ( navWhite > 1200 ){
+						$('ul.nav li.dropdown').hover(function() {
+							  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(500);
+							}, function() {
+							  $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(500);
+							});
+						}					
+				});
+				
+				
+		</script>
+
+
+	</header>
+	<!-- //GB-header -->
+		<!-- 
+ * 일자        작성자          변경내역
+ * 2022.05.09  dahoe0304       연장경매 표시 및 css 재정의
+ * 2022.05.17  yukipeter       연장경매진행여부 표시 (추천경매 및 인기경매 리스트)
+-->
+
+
+
+
+
+
+
+
+<style type="text/css">
+.bx-clone {display:none;}
+@media (min-width: 830px) {
+	.col-pc {
+		width: 20%;
+		float: left;
+	} 
+}
+.extnAucStyle{		/* 연장경매 표시 css 2022.05.09 신다회 */
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 3px;
+}
+</style>
+<script type="text/javascript" src="./- 코베이옥션 -_files/jquery.lazyload.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('img.lazyload').lazyload({
+		placeholder : '/kobay/images/loading.gif',    // 로딩 이미지
+		threshold: 100
+	});
+});
+
+function goItemView(categorymstid, itemseq){
+	
+	if(categorymstid == 'shpm'){
+		location.href = '/kobay/item/itemShopView.do?itemseq=' + itemseq;
+	}else if(categorymstid == 'plan'){
+		frm.action = '/kobay/item/planView.do?itemseq=' + itemseq;
+		
+	}else if(categorymstid == 'life'){
+		frm.action = '/kobay/item/itemLifeView.do?itemseq=' + itemseq;
+	}else{ // auci
+		frm.action = '/kobay/item/itemView.do?itemseq?itemseq=' + itemseq;
+	}
+}
+
+$(document).ready(function(){
+	
+		if(typeof(window.android) != "undefined" ){
+			var autoLoginYn = window.android.getAutoLoginYn();
+			if('Y'==autoLoginYn){
+				location.href = '/kobay/member/login.do';
+			}
+		}
+	
+	/* var isMobileYN = ( navigator.userAgent.indexOf("Android") != -1 || navigator.userAgent.indexOf("iPhone") != -1 )? "N":"N";
+	if(typeof(window.android) == "undefined" ){ */
+		/* if ( isMobileYN !="Y" ) { */
+			try{
+				
+					if(getCookie_pop("PI01_1830")!="Y"){
+						popup_window('listPop_PI01_1830', '/kobay/popupView.do?type=PI01&seq=1830', 0, 0, 500, 640, 0, 0, 0, 1, 1);
+					}
+				
+				}catch(e){}
+			
+		/* 	
+		} */
+	/* } */
+	
+	$("#mainVisual").delay(10).css("height", "");
+});
+
+</script>
+
+
+
+
+	<!-- main-visual -->
+	<div class="container-fluid">
+		<div id="mainVisual" class="bxSliderWrap" style="overflow: hidden;">
+			<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 512px;"><ul class="bxslider list-unstyled" style="width: 515%; position: relative; transition-duration: 0s; transform: translate3d(0px, 0px, 0px);"><li style="float: left; list-style: none; position: relative; width: 1512px;" class="bx-clone">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/itemList.do?itemType=SP&amp;ITEMSEQ_SP=2207Z3RA7S4,2207V8INF71,2207W9OKH32,2207YPU2VUU,2207G8PZ5WA,2207UIMTCVO,2207KE6SO4C,2207HP83W21,22073UJ8X79,2207NA3V24W,2207R1GDS8H,2207MHU77F1,2207PPAT9RB,22076QD4SCX,2207EZ3TVU3,2207TYXXHKQ,2207PSTXSRH,2207CVAZ3ON,22074S4LASP,2207SZUPPFS,2207X98QUUO,22072ZUBLQQ,2207MW1AMPS,2207TPOI2KC,22071BC2OY6,2207OU3YGLQ,22076477V9F,22074LDZ9PZ,2207ML74G1C,2207HNECO56,2207YKIENUA,2207IJ3942G,2207Z2LIO1T,2207Q413PPM,2207EHZT4FM,2207MRC2IVH,2207VB49PZB,22073FHG6IA,2207ZH78AAU,2207FE6OG2A,2207RCR7R5Z,2207NOPOOUF,220799V1W6C,2207MG1VMAH,2207BNP3BAS,2207MFCT1V9,2207ETJPLLN,2207X5YNXRV,22079IBF5KA,2207NWG9BVL&#39;;"><img src="./- 코베이옥션 -_files/pc1_01.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[판매자 기획경매 272] SP 돌판 기획전2"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/itemList.do?itemType=SP&amp;ITEMSEQ_SP=2207Z3RA7S4,2207V8INF71,2207W9OKH32,2207YPU2VUU,2207G8PZ5WA,2207UIMTCVO,2207KE6SO4C,2207HP83W21,22073UJ8X79,2207NA3V24W,2207R1GDS8H,2207MHU77F1,2207PPAT9RB,22076QD4SCX,2207EZ3TVU3,2207TYXXHKQ,2207PSTXSRH,2207CVAZ3ON,22074S4LASP,2207SZUPPFS,2207X98QUUO,22072ZUBLQQ,2207MW1AMPS,2207TPOI2KC,22071BC2OY6,2207OU3YGLQ,22076477V9F,22074LDZ9PZ,2207ML74G1C,2207HNECO56,2207YKIENUA,2207IJ3942G,2207Z2LIO1T,2207Q413PPM,2207EHZT4FM,2207MRC2IVH,2207VB49PZB,22073FHG6IA,2207ZH78AAU,2207FE6OG2A,2207RCR7R5Z,2207NOPOOUF,220799V1W6C,2207MG1VMAH,2207BNP3BAS,2207MFCT1V9,2207ETJPLLN,2207X5YNXRV,22079IBF5KA,2207NWG9BVL&#39;;"><img src="./- 코베이옥션 -_files/mobile1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[판매자 기획경매 272] SP 돌판 기획전2"></a>
+							
+							
+						
+					</li>
+				
+				
+				
+					<li style="float: left; list-style: none; position: relative; width: 1512px;">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/itemList.do?itemType=SP&amp;ITEMSEQ_SP=2207RDLHQLB,22076ZZ8ATE,2207BKKNJ5O,2207XF7WUE2,22071B8NQAT,220738NU4NW,2207JOB7FEL,22071SK9FFN,22076ICT6Y7,2207ULUXKI8,22073PQJOU9,2207VO158LD,2207N3FWFXQ,2207PQ3QMLA,2207KKIL9AC,2207X5LFUTA,2207CA76SRM,2207P32TXXX,2207SS14E4O,2207X681GZW,2207IKUSOK9,2207G4FCDSP,2207MRFS27L,2207YA8ET1A,2207F9F3C6N,220778CYTXS,22073BSZ9AF,2207RY1UZRT,2207XK79VYR,2207ELHJXDO,2207YVY31DC,22072V3UUAM,2207GBE24GI,2207BADJ8RS,2207DF3M7G1,2207WENY6NP,2207U5S6D4S,2207V8RSYIG,2207189DROI,2207MMIZZ9T,2207ROHUVL1,2207IYXI61Y,2207AZSWDIZ,2207NHSEYG3,2207ILRGSNW,22078T7MPU9,2207M3BCERG,2207DNT8G8Y,2207AQ45ATL,2207ZDISFAJ,2207LZSX2S1,2207AXD1LAP,2207EC2F9YB,22072SPD1EC,2207FF87QVZ,2207LD7BNXO,2207Q6GAWIG,2207CETAMS6,2207VJ49AI8,2207Z92YCCK,2207FOPKFR2,2207ZBU9IGH,220743ZJIB9,2207HAYDYVV,2207OUUUWK7,2207DZU9QYZ,22073F7XUX7,2207N8MM1SC,2207RP6Z3A1,2207WSMQAL1,22078UJ9QUB,2207OYHK6CI,2207KMWEYSH,2207M7GNXMR,2207636ZXOH&#39;;"><img src="./- 코베이옥션 -_files/pc1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[판매자 기획경매 271] 레코드 기획전 시즌4"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/itemList.do?itemType=SP&amp;ITEMSEQ_SP=2207RDLHQLB,22076ZZ8ATE,2207BKKNJ5O,2207XF7WUE2,22071B8NQAT,220738NU4NW,2207JOB7FEL,22071SK9FFN,22076ICT6Y7,2207ULUXKI8,22073PQJOU9,2207VO158LD,2207N3FWFXQ,2207PQ3QMLA,2207KKIL9AC,2207X5LFUTA,2207CA76SRM,2207P32TXXX,2207SS14E4O,2207X681GZW,2207IKUSOK9,2207G4FCDSP,2207MRFS27L,2207YA8ET1A,2207F9F3C6N,220778CYTXS,22073BSZ9AF,2207RY1UZRT,2207XK79VYR,2207ELHJXDO,2207YVY31DC,22072V3UUAM,2207GBE24GI,2207BADJ8RS,2207DF3M7G1,2207WENY6NP,2207U5S6D4S,2207V8RSYIG,2207189DROI,2207MMIZZ9T,2207ROHUVL1,2207IYXI61Y,2207AZSWDIZ,2207NHSEYG3,2207ILRGSNW,22078T7MPU9,2207M3BCERG,2207DNT8G8Y,2207AQ45ATL,2207ZDISFAJ,2207LZSX2S1,2207AXD1LAP,2207EC2F9YB,22072SPD1EC,2207FF87QVZ,2207LD7BNXO,2207Q6GAWIG,2207CETAMS6,2207VJ49AI8,2207Z92YCCK,2207FOPKFR2,2207ZBU9IGH,220743ZJIB9,2207HAYDYVV,2207OUUUWK7,2207DZU9QYZ,22073F7XUX7,2207N8MM1SC,2207RP6Z3A1,2207WSMQAL1,22078UJ9QUB,2207OYHK6CI,2207KMWEYSH,2207M7GNXMR,2207636ZXOH&#39;;"><img src="./- 코베이옥션 -_files/mobile1(1).jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[판매자 기획경매 271] 레코드 기획전 시즌4"></a>
+							
+							
+						
+					</li>
+				
+					<li style="float: left; list-style: none; position: relative; width: 1512px;">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planList.do?categoryid=010901&amp;itemType=OK&#39;;"><img src="./- 코베이옥션 -_files/pc_1_1920x650_상단배너.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[260회 삶의흔적] 시작배너(온라인경매 진행)"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planList.do?categoryid=010901&amp;itemType=OK&#39;;"><img src="./- 코베이옥션 -_files/mobile1_960x650_상단배너.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[260회 삶의흔적] 시작배너(온라인경매 진행)"></a>
+							
+							
+						
+					</li>
+				
+					<li style="float: left; list-style: none; position: relative; width: 1512px;">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/itemList.do?itemType=SP&amp;ITEMSEQ_SP=2207Z3RA7S4,2207V8INF71,2207W9OKH32,2207YPU2VUU,2207G8PZ5WA,2207UIMTCVO,2207KE6SO4C,2207HP83W21,22073UJ8X79,2207NA3V24W,2207R1GDS8H,2207MHU77F1,2207PPAT9RB,22076QD4SCX,2207EZ3TVU3,2207TYXXHKQ,2207PSTXSRH,2207CVAZ3ON,22074S4LASP,2207SZUPPFS,2207X98QUUO,22072ZUBLQQ,2207MW1AMPS,2207TPOI2KC,22071BC2OY6,2207OU3YGLQ,22076477V9F,22074LDZ9PZ,2207ML74G1C,2207HNECO56,2207YKIENUA,2207IJ3942G,2207Z2LIO1T,2207Q413PPM,2207EHZT4FM,2207MRC2IVH,2207VB49PZB,22073FHG6IA,2207ZH78AAU,2207FE6OG2A,2207RCR7R5Z,2207NOPOOUF,220799V1W6C,2207MG1VMAH,2207BNP3BAS,2207MFCT1V9,2207ETJPLLN,2207X5YNXRV,22079IBF5KA,2207NWG9BVL&#39;;"><img src="./- 코베이옥션 -_files/pc1_01.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[판매자 기획경매 272] SP 돌판 기획전2"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/itemList.do?itemType=SP&amp;ITEMSEQ_SP=2207Z3RA7S4,2207V8INF71,2207W9OKH32,2207YPU2VUU,2207G8PZ5WA,2207UIMTCVO,2207KE6SO4C,2207HP83W21,22073UJ8X79,2207NA3V24W,2207R1GDS8H,2207MHU77F1,2207PPAT9RB,22076QD4SCX,2207EZ3TVU3,2207TYXXHKQ,2207PSTXSRH,2207CVAZ3ON,22074S4LASP,2207SZUPPFS,2207X98QUUO,22072ZUBLQQ,2207MW1AMPS,2207TPOI2KC,22071BC2OY6,2207OU3YGLQ,22076477V9F,22074LDZ9PZ,2207ML74G1C,2207HNECO56,2207YKIENUA,2207IJ3942G,2207Z2LIO1T,2207Q413PPM,2207EHZT4FM,2207MRC2IVH,2207VB49PZB,22073FHG6IA,2207ZH78AAU,2207FE6OG2A,2207RCR7R5Z,2207NOPOOUF,220799V1W6C,2207MG1VMAH,2207BNP3BAS,2207MFCT1V9,2207ETJPLLN,2207X5YNXRV,22079IBF5KA,2207NWG9BVL&#39;;"><img src="./- 코베이옥션 -_files/mobile1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[판매자 기획경매 272] SP 돌판 기획전2"></a>
+							
+							
+						
+					</li>
+				
+				
+			<li style="float: left; list-style: none; position: relative; width: 1512px;" class="bx-clone">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/itemList.do?itemType=SP&amp;ITEMSEQ_SP=2207RDLHQLB,22076ZZ8ATE,2207BKKNJ5O,2207XF7WUE2,22071B8NQAT,220738NU4NW,2207JOB7FEL,22071SK9FFN,22076ICT6Y7,2207ULUXKI8,22073PQJOU9,2207VO158LD,2207N3FWFXQ,2207PQ3QMLA,2207KKIL9AC,2207X5LFUTA,2207CA76SRM,2207P32TXXX,2207SS14E4O,2207X681GZW,2207IKUSOK9,2207G4FCDSP,2207MRFS27L,2207YA8ET1A,2207F9F3C6N,220778CYTXS,22073BSZ9AF,2207RY1UZRT,2207XK79VYR,2207ELHJXDO,2207YVY31DC,22072V3UUAM,2207GBE24GI,2207BADJ8RS,2207DF3M7G1,2207WENY6NP,2207U5S6D4S,2207V8RSYIG,2207189DROI,2207MMIZZ9T,2207ROHUVL1,2207IYXI61Y,2207AZSWDIZ,2207NHSEYG3,2207ILRGSNW,22078T7MPU9,2207M3BCERG,2207DNT8G8Y,2207AQ45ATL,2207ZDISFAJ,2207LZSX2S1,2207AXD1LAP,2207EC2F9YB,22072SPD1EC,2207FF87QVZ,2207LD7BNXO,2207Q6GAWIG,2207CETAMS6,2207VJ49AI8,2207Z92YCCK,2207FOPKFR2,2207ZBU9IGH,220743ZJIB9,2207HAYDYVV,2207OUUUWK7,2207DZU9QYZ,22073F7XUX7,2207N8MM1SC,2207RP6Z3A1,2207WSMQAL1,22078UJ9QUB,2207OYHK6CI,2207KMWEYSH,2207M7GNXMR,2207636ZXOH&#39;;"><img src="./- 코베이옥션 -_files/pc1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[판매자 기획경매 271] 레코드 기획전 시즌4"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/itemList.do?itemType=SP&amp;ITEMSEQ_SP=2207RDLHQLB,22076ZZ8ATE,2207BKKNJ5O,2207XF7WUE2,22071B8NQAT,220738NU4NW,2207JOB7FEL,22071SK9FFN,22076ICT6Y7,2207ULUXKI8,22073PQJOU9,2207VO158LD,2207N3FWFXQ,2207PQ3QMLA,2207KKIL9AC,2207X5LFUTA,2207CA76SRM,2207P32TXXX,2207SS14E4O,2207X681GZW,2207IKUSOK9,2207G4FCDSP,2207MRFS27L,2207YA8ET1A,2207F9F3C6N,220778CYTXS,22073BSZ9AF,2207RY1UZRT,2207XK79VYR,2207ELHJXDO,2207YVY31DC,22072V3UUAM,2207GBE24GI,2207BADJ8RS,2207DF3M7G1,2207WENY6NP,2207U5S6D4S,2207V8RSYIG,2207189DROI,2207MMIZZ9T,2207ROHUVL1,2207IYXI61Y,2207AZSWDIZ,2207NHSEYG3,2207ILRGSNW,22078T7MPU9,2207M3BCERG,2207DNT8G8Y,2207AQ45ATL,2207ZDISFAJ,2207LZSX2S1,2207AXD1LAP,2207EC2F9YB,22072SPD1EC,2207FF87QVZ,2207LD7BNXO,2207Q6GAWIG,2207CETAMS6,2207VJ49AI8,2207Z92YCCK,2207FOPKFR2,2207ZBU9IGH,220743ZJIB9,2207HAYDYVV,2207OUUUWK7,2207DZU9QYZ,22073F7XUX7,2207N8MM1SC,2207RP6Z3A1,2207WSMQAL1,22078UJ9QUB,2207OYHK6CI,2207KMWEYSH,2207M7GNXMR,2207636ZXOH&#39;;"><img src="./- 코베이옥션 -_files/mobile1(1).jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[판매자 기획경매 271] 레코드 기획전 시즌4"></a>
+							
+							
+						
+					</li></ul></div><div class="bx-controls bx-has-pager bx-has-controls-auto"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="http://www.kobay.co.kr/kobay/index.do" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="http://www.kobay.co.kr/kobay/index.do" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="http://www.kobay.co.kr/kobay/index.do" data-slide-index="2" class="bx-pager-link">3</a></div></div><div class="bx-controls-auto"><div class="bx-controls-auto-item"><a class="bx-start active" href="http://www.kobay.co.kr/kobay/index.do">Start</a></div><div class="bx-controls-auto-item"><a class="bx-stop" href="http://www.kobay.co.kr/kobay/index.do">Stop</a></div></div></div></div>
+			<script type="text/javascript">
+				$('.bxslider').bxSlider({
+					auto: true,
+					autoControls: true,
+					controls: false
+				});
+			</script>
+		</div>
+	</div>
+	<!-- //main-visual -->
+
+	<!-- mainCenterBanner -->
+	<div class="container-fluid">
+		<div id="mainCenterBanner" style="visibility: visible; opacity: 1;">
+			<div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 354px;"><ul class="bxslider2 list-unstyled" style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -1417.5px, 0px);"><li style="float: none; list-style: none; position: relative; width: 1512px;" class="bx-clone">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207V116ZQD&#39;;"><img src="./- 코베이옥션 -_files/03pc_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 51번 내무아문훈시)"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207V116ZQD&#39;;"><img src="./- 코베이옥션 -_files/03mobile_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 51번 내무아문훈시)"></a>
+							
+							
+						
+					</li>
+				
+				
+				
+					<li style="float: none; list-style: none; position: relative; width: 1512px;">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207HHG8P3V&#39;;"><img src="./- 코베이옥션 -_files/09pc_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 361번 순종 칙유], [조선 통감 유고]))"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207HHG8P3V&#39;;"><img src="./- 코베이옥션 -_files/09mobile_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 361번 순종 칙유], [조선 통감 유고]))"></a>
+							
+							
+						
+					</li>
+				
+					<li style="float: none; list-style: none; position: relative; width: 1512px;">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207QDRCP7H&#39;;"><img src="./- 코베이옥션 -_files/10pc_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 410번 KOREAN REPOSITORY)"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207QDRCP7H&#39;;"><img src="./- 코베이옥션 -_files/10mobile_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 410번 KOREAN REPOSITORY)"></a>
+							
+							
+						
+					</li>
+				
+					<li style="float: none; list-style: none; position: relative; width: 1512px;">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=22077LL9A3M&#39;;"><img src="./- 코베이옥션 -_files/06pc_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 160번 오지호 친필원고)"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=22077LL9A3M&#39;;"><img src="./- 코베이옥션 -_files/06mobile_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 160번 오지호 친필원고)"></a>
+							
+							
+						
+					</li>
+				
+					<li style="float: none; list-style: none; position: relative; width: 1512px;">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207S2YAEXD&#39;;"><img src="./- 코베이옥션 -_files/05pc_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 146번 강화도 일괄 문서)"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207S2YAEXD&#39;;"><img src="./- 코베이옥션 -_files/05mobile_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 146번 강화도 일괄 문서)"></a>
+							
+							
+						
+					</li>
+				
+					<li style="float: none; list-style: none; position: relative; width: 1512px;">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207V116ZQD&#39;;"><img src="./- 코베이옥션 -_files/03pc_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 51번 내무아문훈시)"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207V116ZQD&#39;;"><img src="./- 코베이옥션 -_files/03mobile_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 51번 내무아문훈시)"></a>
+							
+							
+						
+					</li>
+				
+				
+			<li style="float: none; list-style: none; position: relative; width: 1512px;" class="bx-clone">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207HHG8P3V&#39;;"><img src="./- 코베이옥션 -_files/09pc_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-lg visible-md visible-sm" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 361번 순종 칙유], [조선 통감 유고]))"></a>
+								<a href="http://www.kobay.co.kr/kobay/index.do#none" onclick="location.href=&#39;http://www.kobay.co.kr/kobay/item/planView.do?itemseq=2207HHG8P3V&#39;;"><img src="./- 코베이옥션 -_files/09mobile_1.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" class="visible-xs" border="0" title="" alt="[제260회 삶의흔적 온라인] 물품배너 (경매번호 361번 순종 칙유], [조선 통감 유고]))"></a>
+							
+							
+						
+					</li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev" href="http://www.kobay.co.kr/kobay/index.do">Prev</a><a class="bx-next" href="http://www.kobay.co.kr/kobay/index.do">Next</a></div></div></div>
+			<script type="text/javascript">
+				$(function(){
+					var banner2EA = $(".bxslider2 > li").length;
+					if(banner2EA > 3){
+						$('.bxslider2').bxSlider({
+							mode: 'vertical',
+							auto: true,
+							autoControls: false,
+							pager: false,
+							touchEnabled: false,
+							onSliderLoad: function(){ $("#mainCenterBanner").css("visibility", "visible").animate({opacity:1}); }
+						});
+					}else {
+						$('.bxslider2').bxSlider({
+							mode: 'vertical',
+							auto: false,
+							autoControls: false,
+							pager: false,
+							touchEnabled: false,
+							onSliderLoad: function(){ $("#mainCenterBanner").css("visibility", "visible").animate({opacity:1}); }
+						});
+					}
+				});
+				
+			</script>
+		</div>
+	</div>
+	<!-- //mainCenterBanner -->
+	<!-- 코베이 추천경매 -->
+	<div class="container mobilePd">
+		<div class="product-list01">
+			<h2 class="main-listTitle clearFix">
+				코베이 <strong>추천경매</strong>
+				<span class="pull-right"><a href="http://www.kobay.co.kr/kobay/item/itemList.do?itemType=RS&amp;ord1=OD&amp;sort1=asc">전체보기&nbsp;&nbsp;&nbsp;&nbsp;<img src="./- 코베이옥션 -_files/main-iconMore.gif" alt="더보기"></a></span>
+			</h2>
+			<div class="row listWrap">
+				
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2205MEUFQES">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/05/ME/2205MEUFQES_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2205MEUFQES]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/2205MEUFQES_0.jpg" style="display: block;"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px"> 히트 가요 60년 노래책(증보판)- 1983년 현대 악보사 발행. 17/3</span>
+									<span class="won">14,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>6</i></span>
+									<span>조회 <i>80</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;lt21&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_01.png">
+								<br><i class="fa fa-clock-o"></i> 2시간 57분
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=220718W68YY">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/18/220718W68YY_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[220718W68YY]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/220718W68YY_0.jpg" style="display: block;"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">백미현 / 다시 사랑할수 있다면  / 눈이 내리면 / 널 보내고  외 ㅡ엘...</span>
+									<span class="won">11,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>4</i></span>
+									<span>조회 <i>83</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;kkss7989&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_01.png">
+								<br><i class="fa fa-clock-o"></i> 3시간 22분
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=22073YFI7R1">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/3Y/22073YFI7R1_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[22073YFI7R1]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/22073YFI7R1_0.jpg" style="display: block;"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">금속활자본/조선시대/우암/송시열선생/우암선생문집</span>
+									<span class="won">100,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>10</i></span>
+									<span>조회 <i>185</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;aaaa3&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 3시간 30분
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207Q9KQBYT">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/Q9/2207Q9KQBYT_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207Q9KQBYT]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/2207Q9KQBYT_0.jpg" style="display: block;"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">*목판본*사계선생일고砂溪先生逸稿/장여화張汝華/인동장씨</span>
+									<span class="won">30,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>3</i></span>
+									<span>조회 <i>95</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;jbejsm&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_03.png">
+								<br><i class="fa fa-clock-o"></i> 1일 02시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207KBH2Y2P">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/KB/2207KBH2Y2P_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207KBH2Y2P]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/2207KBH2Y2P_0.jpg" style="display: block;"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">성우전자에서 만든 Sweico 라디오 카세트...삼성,금성,보다 귀한 근대...</span>
+									<span class="won">55,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>10</i></span>
+									<span>조회 <i>137</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;qntks&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 1일 03시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207QUP3CKO">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/QU/2207QUP3CKO_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207QUP3CKO]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">유약의 뭉침과 흐름이 좋은 조선후기 목이 긴 백자  차호</span>
+									<span class="won">60,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>9</i></span>
+									<span>조회 <i>124</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;lms6804&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 2일 02시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=220782KTA3U">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/82/220782KTA3U_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[220782KTA3U]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">정지용 연구(1987년 초판)</span>
+									<span class="won">15,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>0</i></span>
+									<span>조회 <i>17</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;seohee68&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_03.png">
+								<br><i class="fa fa-clock-o"></i> 2일 03시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207P3ZT49D">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/P3/2207P3ZT49D_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207P3ZT49D]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">(미사용)  UN 통성냥</span>
+									<span class="won">10,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>0</i></span>
+									<span>조회 <i>54</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;parkks1971&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 2일 04시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=22073LKQV63">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/3L/22073LKQV63_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[22073LKQV63]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">三國誌  上海本</span>
+									<span class="won">37,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>8</i></span>
+									<span>조회 <i>117</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;goomen21&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_03.png">
+								<br><i class="fa fa-clock-o"></i> 2일 18시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=22071JLSO5C">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/1J/22071JLSO5C_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[22071JLSO5C]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">투투(Two Two) (미개봉) LP</span>
+									<span class="won">52,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>16</i></span>
+									<span>조회 <i>42</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;jwjenny&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 3일 03시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207H88X6JP">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/H8/2207H88X6JP_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207H88X6JP]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">일제강점기 중대형 항아리 진공관 라디오(근대사,전축,금성)</span>
+									<span class="won">200,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>8</i></span>
+									<span>조회 <i>138</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;king007&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 4일 01시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207NPRLDU8">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/NP/2207NPRLDU8_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207NPRLDU8]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">오래된 옛 화폐 13매 일괄</span>
+									<span class="won">63,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>13</i></span>
+									<span>조회 <i>94</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;tkatnstkatlr&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_01.png">
+								<br><i class="fa fa-clock-o"></i> 4일 04시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207O4HF9UT">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/O4/2207O4HF9UT_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207O4HF9UT]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">무형문화재 "도암" 지순탁 作 "청자흑백상감운학문매병"</span>
+									<span class="won">160,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>16</i></span>
+									<span>조회 <i>140</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;milkyway&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 5일 03시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207ZZJKGB8">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/ZZ/2207ZZJKGB8_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207ZZJKGB8]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">"중요무형문화재 제 60호" 장도장 박용기 은장도 셋트(진품보증)(작품...</span>
+									<span class="won">20,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>11</i></span>
+									<span>조회 <i>41</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;wkdrjtjd12&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_04.png">
+								<br><i class="fa fa-clock-o"></i> 7일 04시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207Q7L7M6D">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/Q7/2207Q7L7M6D_0.png" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207Q7L7M6D]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">천연AAA밀키오팔좌대석(AAA Natural Milky Opal with wood stand)    </span>
+									<span class="won">100,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>0</i></span>
+									<span>조회 <i>13</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;jeonghw0824&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_03.png">
+								<br><i class="fa fa-clock-o"></i> 8일 01시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+			</div>
+		</div>
+	</div>
+	<!-- //코베이 추천경매 -->
+
+	<!-- 코베이 인기경매 -->
+	<div class="container-fluid mainList-popular mobilePd">
+		<div class="container">
+			<div class="product-list01">
+				<h2 class="main-listTitle clearFix">
+					코베이 <strong>인기경매</strong>
+					<span class="pull-right"><a href="http://www.kobay.co.kr/kobay/item/itemList.do?itemType=LB_HOT&amp;ord1=OG&amp;sort1=desc">전체보기&nbsp;&nbsp;&nbsp;&nbsp;<img src="./- 코베이옥션 -_files/main-iconMore.gif" alt="더보기"></a></span>
+				</h2>
+				<div class="row listWrap">
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207LV6MCH6">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/LV/2207LV6MCH6_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207LV6MCH6]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">우표초봉 #719 : 20대 대통령 취임 기념 (2022. 5. 10 우표박물관)</span>
+									<span class="won">10,300 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>54</i></span>
+									<span>조회 <i>51</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;sgirl5&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 8일 02시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=220786FEJ51">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/86/220786FEJ51_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[220786FEJ51]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">남궁옥분  84 , 설악산, 작은동산 LP</span>
+									<span class="won">211,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>39</i></span>
+									<span>조회 <i>147</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;so1001&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_03.png">
+								<br><i class="fa fa-clock-o"></i> 3시간 45분
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207V8XXBXB">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/V8/2207V8XXBXB_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207V8XXBXB]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">김수정 일곱개의숟가락 1~7권</span>
+									<span class="won">51,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>36</i></span>
+									<span>조회 <i>85</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;parkplace&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_05.png">
+								<br><i class="fa fa-clock-o"></i> 4일 00시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=22076ULF2CY">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/6U/22076ULF2CY_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[22076ULF2CY]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">빅보물섬 87년 10월호</span>
+									<span class="won">55,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>33</i></span>
+									<span>조회 <i>100</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;parkplace&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_05.png">
+								<br><i class="fa fa-clock-o"></i> 2일 04시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207KZGTOS6">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/KZ/2207KZGTOS6_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207KZGTOS6]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">오래된/난그림/족자/2점</span>
+									<span class="won">580,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>31</i></span>
+									<span>조회 <i>301</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;aaaa3&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 3시간 44분
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=22071PNRZ9H">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/1P/22071PNRZ9H_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[22071PNRZ9H]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">골드스타 / 금성라디오 / RM - 100 / AM 팔석라디오</span>
+									<span class="won">45,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>30</i></span>
+									<span>조회 <i>88</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;success&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 1일 02시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207G6PO4TW">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/G6/2207G6PO4TW_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207G6PO4TW]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">22-1 청 강희 연녹지 배추초충문 반</span>
+									<span class="won">79,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>27</i></span>
+									<span>조회 <i>97</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;ku1581&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_05.png">
+								<br><i class="fa fa-clock-o"></i> 1일 03시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207BDMZHYS">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/BD/2207BDMZHYS_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207BDMZHYS]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">83년 어깨동무 5월호</span>
+									<span class="won">77,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>26</i></span>
+									<span>조회 <i>91</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;parkplace&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_05.png">
+								<br><i class="fa fa-clock-o"></i> 22시간 55분
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207EZJH39K">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/EZ/2207EZJH39K_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207EZJH39K]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">장지만[張之萬] 한림설제[寒林雪齊] 설경산수[雪景山水] [액자 완비][...</span>
+									<span class="won">67,200 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>26</i></span>
+									<span>조회 <i>210</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;choi5114&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_01.png">
+								<br><i class="fa fa-clock-o"></i> 1일 03시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207AUYHFRQ">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/AU/2207AUYHFRQ_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207AUYHFRQ]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">청록산수 * 雲甫</span>
+									<span class="won">137,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>23</i></span>
+									<span>조회 <i>231</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;baek1937sung&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_03.png">
+								<br><i class="fa fa-clock-o"></i> 3시간 36분
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207JRJILXK">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/JR/2207JRJILXK_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207JRJILXK]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">휴대용 우표첩 : 필라코리아 1994 세계우표전시회 (1994. 6. 13)</span>
+									<span class="won">12,100 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>22</i></span>
+									<span>조회 <i>8</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;sgirl5&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 8일 03시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207DS8ZJKE">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/DS/2207DS8ZJKE_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207DS8ZJKE]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">85년 어깨동무 10월호</span>
+									<span class="won">77,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>22</i></span>
+									<span>조회 <i>76</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;parkplace&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_05.png">
+								<br><i class="fa fa-clock-o"></i> 23시간 01분
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207X7YV2C3">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/X7/2207X7YV2C3_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207X7YV2C3]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">땟물좋고.년대좋은.사슴뿔로.만들어진.화살촉 조이게.촉돌이</span>
+									<span class="won">59,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>22</i></span>
+									<span>조회 <i>87</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;goldkim&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_03.png">
+								<br><i class="fa fa-clock-o"></i> 5일 03시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=22073HVUQ5L">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/3H/22073HVUQ5L_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[22073HVUQ5L]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">은로소주.음료수병.우유병.소주병</span>
+									<span class="won">140,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>20</i></span>
+									<span>조회 <i>56</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;chojae9614&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_03.png">
+								<br><i class="fa fa-clock-o"></i> 6일 02시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+						
+							
+							
+								<a href="http://www.kobay.co.kr/kobay/item/itemView.do?itemseq=2207I2KZN8W">
+							
+						
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/07/I2/2207I2KZN8W_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2207I2KZN8W]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc" style="height:40px">LP판 음반[윤미순]가 랑 비/그러나 마음만은</span>
+									<span class="won">29,000 원</span>
+								</span>
+								<span class="hit">
+									<span>입찰 <i>20</i></span>
+									<span>조회 <i>95</i></span>
+								</span>
+								<span class="time">
+								판매&nbsp;&nbsp;but0104&nbsp;<img src="./- 코베이옥션 -_files/rank_img_17_02.png">
+								<br><i class="fa fa-clock-o"></i> 1일 02시간 
+
+								<!-- 연장경매진행여부 표시 2022.05.17 START -->
+								
+								<!-- 연장경매진행여부 표시 2022.05.17 END   -->
+							</span>
+							</a>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //코베이 인기경매 -->
+
+	<!-- 코베이 스페셜상품 -->
+	<div class="container mobilePd">
+		<div class="product-list01">
+			<h2 class="main-listTitle clearFix">
+				코베이 <strong>스페셜상품</strong>
+				<span class="pull-right"><a href="http://www.kobay.co.kr/kobay/item/itemShopList.do?itemType=LSC&amp;ord1=OI&amp;sort1=desc">전체보기&nbsp;&nbsp;&nbsp;&nbsp;<img src="./- 코베이옥션 -_files/main-iconMore.gif" alt="더보기"></a></span>
+			</h2>
+			<div class="row listWrap">
+				
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+							
+								
+								
+									<a href="http://www.kobay.co.kr/kobay/item/itemShopView.do?itemseq=22033YMXE7C">
+								
+							
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/03/3Y/22033YMXE7C_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[22033YMXE7C]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc">&lt;貴重本-書誌學 資料&gt; 戊申字 金屬活字本 [...</span>
+									<span class="won">700,000 원</span>
+								</span>
+							</a>
+						</div>
+					
+				
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+							
+								
+								
+									<a href="http://www.kobay.co.kr/kobay/item/itemShopView.do?itemseq=2203P6Q9R5H">
+								
+							
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/03/P6/2203P6Q9R5H_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2203P6Q9R5H]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc">&lt;稀覯本-秋史 知人 資料&gt; 1643年 刊...</span>
+									<span class="won">1,300,000 원</span>
+								</span>
+							</a>
+						</div>
+					
+				
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+							
+								
+								
+									<a href="http://www.kobay.co.kr/kobay/item/itemShopView.do?itemseq=2204CKU8D4D">
+								
+							
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/04/CK/2204CKU8D4D_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2204CKU8D4D]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc">1923年頃 刊行, 古版本이 包含된 沙溪 金長...</span>
+									<span class="won">1,200,000 원</span>
+								</span>
+							</a>
+						</div>
+					
+				
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+							
+								
+								
+									<a href="http://www.kobay.co.kr/kobay/item/itemShopView.do?itemseq=2203RY4P5GP">
+								
+							
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/22/03/RY/2203RY4P5GP_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2203RY4P5GP]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc">&lt;藏書印 資料&gt; 朝鮮 後期의 文臣 尹鳳五의 ...</span>
+									<span class="won">200,000 원</span>
+								</span>
+							</a>
+						</div>
+					
+				
+					
+						<div class="col-xs-6 col-sm-4 col-pc">
+							
+								
+								
+									<a href="http://www.kobay.co.kr/kobay/item/itemShopView.do?itemseq=2112BCEGW7M">
+								
+							
+								<span class="thum">
+									
+										
+										
+											
+												
+													<i><img class="lazyload" data-original="/common_filesystem/web_auction/itemImages/21/12/BC/2112BCEGW7M_0.jpg" onerror="this.src=&#39;/admin/images/noimg.gif&#39;;" border="0" title="[2112BCEGW7M]물품의 이미지들을 봅니다." alt="작은이미지" src="./- 코베이옥션 -_files/loading.gif"></i>
+												
+												
+											
+										
+									
+								</span>
+								<span class="price">
+									<span class="desc">朝鮮의 이름난 人物들을 主題別로 整理한 ...</span>
+									<span class="won">300,000 원</span>
+								</span>
+							</a>
+						</div>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+			</div>
+		</div>
+	</div>
+	<!-- //코베이 스페셜상품 -->
+		<div class="container-fluid footBanner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 footBanner-left mobilePd">
+							<div class="dpTable wp100 hp100">
+								<div>
+									<a href="http://www.kobay.co.kr/kobay/guide.do" class="fcWhite" style="display:block;">
+										<h3 class="h1"><span class="h3"><strong>코베이</strong>가</span> <strong>처음</strong>이신가요?</h3>
+										<p class="h4 lineH28">
+											모든 구매자와 판매자에게 열려있는 <span class="h3"><strong>코베이!!</strong></span>
+											<br>더 이상 헤매지 마십시오.
+											<br><strong>당신을 환영합니다~~</strong>
+										</p>
+										<p><strong>more</strong>+</p>
+									</a>
+									<!-- <div class="customCall visible-xs ">
+										<p class="dpTable hp100">
+											<span class="dpTableC vertical-middle"><a href="#." data-toggle="modal" data-target="#kakaoPop"><img src="/kobay/images/common/footBanner-icon0.png" alt="상담신청" /></a></span>
+										</p>
+									</div> -->
+								</div>
+							</div>
+
+					</div>
+					<div class="col-md-7 footBanner-right">
+						<div class="dpTable wp100" style="position:relative; height:100%">
+							<div class="bgBlue">
+								<a href="http://www.kobay.co.kr/kobay/customer/customer-notice-list.do">
+									<span class="tit">공지사항</span>
+									<span class="img-icon"><img src="./- 코베이옥션 -_files/footBanner-icon1.gif" alt=""></span>
+									<span>more+</span>
+								</a>
+							</div>
+							<div class="bgGray1 faceBlog">
+								<a href="https://www.facebook.com/kobay.co.kr/?fref=ts" target="_blank">
+									<span>코베이 페이스북</span>
+									<span class="img-icon"><img src="./- 코베이옥션 -_files/footBanner-icon2.gif" alt=""></span>
+								</a>
+								<a href="http://blog.naver.com/e_kobay" target="_blank">
+									<span>코베이 블로그</span>
+									<span class="img-icon"><img src="./- 코베이옥션 -_files/footBanner-icon21.gif" alt=""></span>
+								</a>
+							</div>
+							<div class="bgGold">
+								<a href="http://www.kobay.co.kr/kobay/customer/customer-consulting-write.do">
+									<span class="tit">경매 및 판매 컨설팅</span>
+									<span class="img-icon"><img src="./- 코베이옥션 -_files/footBanner-icon3.gif" alt=""></span>
+									<span>more+</span>
+								</a>
+							</div>
+							<div class="bgRad">
+								<a href="http://www.kobay.co.kr/kobay/customer/customer-consulting-write.do?kind=40">
+									<span class="tit">등록 대행 서비스</span>
+									<span class="img-icon"><img src="./- 코베이옥션 -_files/footBanner-icon5.png" alt=""></span>
+									<span>more+</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- 
+ * 일자        작성자          변경내역
+ * 2022.03.21  dahoe0304       관리자  IP 설정 추가(개발자들만 보이도록 처리)
+-->
+
+
+
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 --> 
+<script type="text/javascript"> 
+function keySearchFooter(key,openindex) {
+	typeof event.preventDefault=="function" ? event.preventDefault() : (event.returnValue = false);
+	var f = document.Forms;
+	$("#searchcodefooter").val(key);
+	$("#openindexfooter").val(openindex);
+	$("#kind").val("");
+	$("#nowPage").val("1");
+	f.action = "/kobay/customer/customer-faq-list.do";
+	f.submit();
+}
+var urlLoc = document.location.href;
+if(urlLoc.indexOf("itemAucEndBuyForm.do")<0){
+	if (!wcs_add) var wcs_add={};
+	wcs_add["wa"] = "s_1f0cc0b3adab";
+	if (!_nasa) var _nasa={};
+	if (window.wcs) {
+	    wcs.inflow("kobay.co.kr");
+	    wcs_do(_nasa);
+	}
+}
+</script>
+
+		<form name="Forms" id="Forms" method="post" onsubmit="return false;">
+			<input type="hidden" name="nowPage" id="nowPage" value="">
+			<input type="hidden" name="searchcode" id="searchcodefooter" value="">
+			<input type="hidden" name="openindex" id="openindexfooter" value="">
+			<input type="hidden" name="kind" id="kind" value="">
+		</form>
+	<footer>
+		<div class="footCustomer visible-lg visible-md visible-sm">
+			<div class="container dpTable">
+				<div class="dpTableC vertical-middle" style="width:500px">
+					<img src="./- 코베이옥션 -_files/foot-pc-custom.gif" alt="상담신청" usemap="#customLink">
+					<map name="customLink" id="customLink">
+						<!-- <area shape="rect" coords="1,0,307,109" href="http://plus.kakao.com/home/@코베이" target="blank" /> -->
+					</map>
+				</div>
+				<div class="dpTableC vertical-middle quickList">
+					<a href="http://www.kobay.co.kr/kobay/guide.do#buyer" class="col-sm-4 col-md-4 col-lg-2">구매안내</a>
+					<a href="http://www.kobay.co.kr/kobay/guide.do#seller" class="col-sm-4 col-md-4 col-lg-2">판매안내</a>		
+					<a href="http://www.kobay.co.kr/kobay/companyJob.do" class="col-sm-4 col-md-4 col-lg-2">채용안내</a>
+					<a href="http://www.kobay.co.kr/kobay/index.do#." onclick="keySearchFooter(&#39;도난문화재&#39;,&#39;0&#39;)" class="col-sm-4 col-md-4 col-lg-2">도난문화재</a>
+					<a href="http://www.kobay.co.kr/kobay/index.do#." onclick="keySearchFooter(&#39;입금안내&#39;,&#39;0&#39;)" class="col-sm-4 col-md-4 col-lg-2">입금계좌안내</a>
+					<a href="https://988.co.kr/" target="_blank" class="col-sm-4 col-md-4 col-lg-2">원격지원요청</a>
+				</div>
+			</div>
+		</div>
+		<div class="mobileQuickMenu visible-xs">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6 dropup">
+						<a href="http://www.kobay.co.kr/kobay/index.do#." class="dropdown-toggle" data-toggle="dropdown">퀵메뉴</a>
+						<ul class="dropdown-menu">
+							<li><a href="http://www.kobay.co.kr/kobay/guide.do#buyer">구매안내</a></li>  
+							<li><a href="http://www.kobay.co.kr/kobay/guide.do#seller">판매안내</a></li>
+							<!-- <li><a href="/kobay/companyJob.do">채용안내</a></li> -->
+							<li><a href="http://www.kobay.co.kr/kobay/index.do#." onclick="keySearchFooter(&#39;도난문화재&#39;,&#39;0&#39;)">도난문화재</a></li>
+							<li><a href="http://www.kobay.co.kr/kobay/index.do#." onclick="keySearchFooter(&#39;입금안내&#39;,&#39;0&#39;)">입금계좌안내</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-6 dropup">
+						<a href="http://www.kobay.co.kr/kobay/index.do#." class="dropdown-toggle" data-toggle="dropdown">약관 및 정책</a>
+						<ul class="dropdown-menu">
+							<li><a href="http://www.kobay.co.kr/kobay/agree.do">이용약관</a></li>
+							<li><a href="http://www.kobay.co.kr/kobay/privacy.do">개인정보취급방침</a></li>							
+							<li><a href="http://www.kobay.co.kr/kobay/customer/customer-faq-list.do?kind=50&amp;qry=email&amp;openindex=0">이메일무단수집거부</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-xs-6">
+						<a href="http://www.kobay.co.kr/kobay/companyIntro.do">회사소개</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="http://www.kobay.co.kr/kobay/customer/customer.do">고객센터</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footlLcenseBar visible-lg visible-md visible-sm">
+			<div class="container">
+				<div class="pull-left"><img src="./- 코베이옥션 -_files/footlLcense.gif" alt=""></div>
+				<div class="pull-right"><!-- <a href="#"><img src="/kobay/images/common/foot-goTop.gif" alt="" /></a> --></div>
+			</div>
+		</div>
+		
+		<div id="quickTop" style="position: fixed; z-index: 999; bottom: 15px; right: 96px; display: none;">
+			<a href="http://www.kobay.co.kr/kobay/index.do#"><img src="./- 코베이옥션 -_files/foot-goTop.gif" width="40px" height="40px" alt=""></a>
+		</div>
+
+		<div class="footCopy">
+			<div class="container">
+
+				<div class="copyMenu clearFix visible-lg visible-md visible-sm">
+					<a href="http://www.kobay.co.kr/kobay/companyIntro.do">회사소개</a>
+					<a href="http://www.kobay.co.kr/kobay/agree.do">이용약관</a>
+					<a href="http://www.kobay.co.kr/kobay/privacy.do">개인정보취급방침</a>
+					<a href="http://www.kobay.co.kr/kobay/customer/customer-faq-list.do?kind=50&amp;qry=email&amp;openindex=0">이메일무단수집거부</a>
+					<a href="http://www.kobay.co.kr/kobay/customer/customer.do">고객센터</a>
+					<a href="http://www.kobay.co.kr/kobay/app.do">앱소개</a>
+					
+				</div>
+
+				<div class="copyright mobilePd" id="footCopyRightDiv">
+					<address>
+						상호명 : (주)코베이옥션 / 대표이사: 김민재 / 주소: 서울특별시 종로구 삼일대로 457 3층
+						<br>Tel: 02-738-1268 (정확한 상담을 위해 통화내용이 저장됩니다. ) Fax : 02-738-1269   메일 : master@kobay.co.kr
+						<br>사업자등록번호 : 101-81-52101  통신판매업 신고번호 : 제01 – 2225호
+					</address>
+					<p>코베이옥션에서 등록된 오픈마켓 상품은 개별판매자가 시스템을 이용하여 등록한 것으로서 코베이는 등록된 상품과 그 내용에 대하여 일체의 책임을 지지 않습니다</p>
+					<p>Copyright(c) 1999, kobayauction,lnc All rights reserved.ffc821d2-8a80-4a99-b111-010888407fb0</p> 
+					
+<font color="white">WAS2</font>
+					
+				</div>
+
+			</div>
+		</div>
+	
+	</footer>
+	<!-- 카카오 상담신청 팝업 -->
+	<div id="kakaoPop" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+		    <div class="modal-header">
+		      <button type="button" class="close" data-dismiss="modal"></button>
+		      <h4 class="modal-title">카카오톡 상담</h4>
+		    </div>
+		    <div class="modal-body">
+		      <img src="./- 코베이옥션 -_files/kakaoModalPop.jpg" alt="카카오톡 상담" class="imgSize2">
+		    </div>
+		  </div>
+		
+		</div>
+		</div>
+	<script type="text/javascript">
+	$( function() {
+	$( ".datepicker" ).datepicker({
+		dateFormat : "yymmdd",
+		yearSuffix:"년",
+		monthNames : ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+		monthNamesShort : ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+		dayNamesMin : ["일", "월", "화", "수", "목", "금", "토"],
+		changeMonth: true,
+		changeYear: true,
+	});
+	} );
+
+	var quick_menu = $('#quickTop');
+	var quick_top = 80;
+	$(document).ready(function(){
+		var isMobile = ( navigator.userAgent.indexOf("Android") != -1 || navigator.userAgent.indexOf("iPhone") != -1 )? "Y":"N";
+
+		windowWidth = $( window ).width();
+		if ( parseInt(windowWidth) > 1200 ){
+			quick_menu.css("right", (windowWidth/2 - 660)+"px");		
+		}else {
+			quick_menu.css("right","15px");				
+		}
+		
+		$(window).scroll(function(){
+			JSnowTop = $(document).scrollTop();
+			quick_menu.stop();
+			if ( parseInt(JSnowTop) > 300 && isMobile != "Y") {
+				quick_menu.css("display","");				
+			}else {
+				quick_menu.css("display","none");
+			}
+		});
+		
+		$( window ).resize(function() {
+			windowWidth = $( window ).width();
+			if ( parseInt(windowWidth) > 1200 ){
+				quick_menu.css("right", (windowWidth/2 - 660)+"px");		
+			}else {
+				quick_menu.css("right","15px");				
+			}
+		});
+	});
+	
+	
+	 	</script>
+		
+
+
+	<!-- <script type="text/javascript" src="/kobay/js/jquery-latest.min.js"></script> -->
+	<script type="text/javascript" src="./- 코베이옥션 -_files/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./- 코베이옥션 -_files/common.js"></script>
+	<script type="text/javascript" src="./- 코베이옥션 -_files/jquery-ui.js"></script>
+	<!-- Mirae Log Analysis Script Ver 1.0   -->
+	<script type="text/javascript">
+//	var mi_adkey = "onshh";
+//	var mi_is_defender = "";
+//	var mi_dt=new Date(),mi_y=mi_dt.getFullYear(),mi_m=mi_dt.getMonth()+1,mi_d=mi_dt.getDate(),mi_h=mi_dt.getHours();
+//	var mi_date=""+mi_y+(mi_m<=9?"0":"")+mi_m+(mi_d<=9?"0":"")+mi_d+(mi_h<=9?"0":"")+mi_h;
+//	var mi_script = "<scr"+"ipt "+"type='text/javascr"+"ipt' src='//log1.toup.net/mirae_log.js?t="+mi_date+"' charset='utf-8' async='true'></scr"+"ipt>"; 
+//	document.writeln(mi_script);
+	</script>
+	<!-- Mirae Log Analysis Script END  -->
+	<script type="text/javascript">
+	      kakaoPixel('4418729693830232549').pageView();
+	</script>
+<!-- //GB-wrap -->
+
+
+<iframe src="./- 코베이옥션 -_files/Beq5YUTp.html" width="0" height="0" style="display: none;"></iframe></body></html>
